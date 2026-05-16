@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Send, Circle } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Dot } from 'lucide-react';
 import { content } from '../data/content';
 import './Footer.css';
 
@@ -11,15 +11,13 @@ const Footer = () => {
     setEmail('');
   };
 
-  const socialIcons = { Circle };
-
   return (
     <footer className="footer">
       <div className="footer-main">
         <div className="container">
           <div className="footer-grid">
             <div className="footer-brand">
-              <a href="#home" className="footer-logo">
+              <a href="/" className="footer-logo">
                 <span className="brand-text">InfraLicence</span>
                 <span className="brand-tagline">Consultancy & Solutions</span>
               </a>
@@ -32,12 +30,13 @@ const Footer = () => {
                 {content.socialLinks.map((social, index) => (
                     <a
                       key={index}
-                      href={social.url || '#'}
+                      href={social.url || '/'}
                       className="social-link"
                       target="_blank"
                       rel="noopener noreferrer"
+                      aria-label={social.label}
                     >
-                      <Circle size={18} />
+                      <Dot size={18} />
                     </a>
                   ))}
               </div>
