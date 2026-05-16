@@ -4,17 +4,23 @@
   display: flex;
   align-items: center;
   padding: 120px 0 80px;
-  background: linear-gradient(135deg, #1C2A45 0%, #2d4a7c 100%);
+  background: linear-gradient(270deg, #3D738D 0%, #1C2A45 60%);
   overflow: hidden;
 }
 
 .hero-background {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 10%;
   right: 0;
+  left: 35%;
   bottom: 0;
+  width: 70%;
+  height: 80%;
   overflow: hidden;
+  background-image: url('../assets/hero-background.png');
+  background-size: cover;
+  background-position: center left;
+  opacity: 0.8;
 }
 
 .hero-background::before {
@@ -24,7 +30,6 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
 .hero-shape {
@@ -80,9 +85,16 @@
 }
 
 .hero-content {
-  position: relative;
+  position: absolute;
   z-index: 2;
+   top: 30%;
+  right: 0;
+  left: 5%;
+  bottom: 0;
+  width: 30%;
 }
+
+
 
 .hero-badge {
   display: inline-flex;
@@ -162,18 +174,14 @@
 .hero-visual {
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
+  height: 100%;
+  min-height: 400px;
 }
 
 .hero-card {
-  background: var(--white);
-  border-radius: var(--radius-xl);
-  padding: 32px;
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
-  max-width: 340px;
-  position: relative;
-  z-index: 2;
+  display: none;
 }
 
 .hero-card-icon {
@@ -240,14 +248,21 @@
 
 .floating-1 {
   top: 20px;
-  right: 0;
+  right: 20%;
   animation-delay: 0s;
 }
 
 .floating-2 {
-  bottom: 40px;
-  left: 0;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
   animation-delay: 2s;
+}
+
+.floating-3 {
+  bottom: 40px;
+  right: 25%;
+  animation-delay: 1s;
 }
 
 @keyframes floatCard {
