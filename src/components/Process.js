@@ -1,11 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FileText, Send, CheckCircle } from 'lucide-react';
+import { FileText, Send, Search, CheckCircle } from 'lucide-react';
 import { content } from '../data/content';
 import './Process.css';
 
 const Process = () => {
-  const processIcons = [FileText, Send, CheckCircle];
+  const processIcons = [FileText, Send, Search, CheckCircle];
 
   return (
     <section className="process section">
@@ -40,6 +40,13 @@ const Process = () => {
               </div>
               <h3 className="step-title">{step.title}</h3>
               <p className="step-description">{step.description}</p>
+              {step.details && (
+                <ul className="step-details">
+                  {step.details.map((detail, i) => (
+                    <li key={i}>{detail}</li>
+                  ))}
+                </ul>
+              )}
             </motion.div>
           ))}
         </div>

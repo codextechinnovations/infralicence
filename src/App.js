@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Navbar from './components/Navbar';
+import WhatsAppButton from './components/WhatsAppButton';
 import Hero from './components/Hero';
 import Stats from './components/Stats';
 import Services from './components/Services';
@@ -38,6 +39,7 @@ function App() {
   return (
     <Router>
       <Navbar />
+      <WhatsAppButton />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

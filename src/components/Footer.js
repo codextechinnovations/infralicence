@@ -109,7 +109,7 @@ const Footer = () => {
         <div className="container">
           <div className="footer-bottom-content">
             <p>&copy; 2025 InfraLicense Consultants & Solutions. All rights reserved.</p>
-            <p>Powered by <a href="https://crypticalsoftware.com" target="_blank" rel="noopener noreferrer">Cryptical Software</a></p>
+            <p>Powered by CodeX Tech Innovations & Consultants LLP</p>
           </div>
         </div>
       </div>

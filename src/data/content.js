@@ -9,7 +9,6 @@ export const content = {
   },
 
   stats: [
-    { value: '₹1,766', label: 'Cr Processed & Growing', suffix: '' },
     { value: '10+', label: 'Years Of Experience', suffix: '' },
     { value: '20K', label: 'Project Done', suffix: '' },
     { value: '100+', label: 'Happy Client', suffix: '+' }
@@ -105,17 +104,26 @@ export const content = {
     {
       step: 1,
       title: 'Documentation & Assessment',
-      description: 'We carefully review your eligibility and prepare all required documents for PWD licensing.'
+      description: 'We carefully review your eligibility and prepare all required documents for PWD licensing.',
+      details: ['Eligibility Check', 'Document Collection', 'Application Drafting']
     },
     {
       step: 2,
       title: 'Submission & Liaison',
-      description: 'We handle the application submission and coordinate with PWD authorities on your behalf.'
+      description: 'We handle the application submission and coordinate with PWD authorities on your behalf.',
+      details: ['Online Application', 'Fee Payment', 'Authority Coordination']
     },
     {
       step: 3,
+      title: 'Inspection & Verification',
+      description: 'Our team ensures smooth inspection process and addresses any queries from authorities.',
+      details: ['Site Inspection Prep', 'Technical Verification', 'Query Resolution']
+    },
+    {
+      step: 4,
       title: 'Approval & Support',
-      description: 'Once approved, we provide ongoing guidance to ensure smooth project execution and compliance.'
+      description: 'Once approved, we provide ongoing guidance to ensure smooth project execution and compliance.',
+      details: ['Licence Acquisition', 'Renewal Support', 'Compliance Assistance']
     }
   ],
 

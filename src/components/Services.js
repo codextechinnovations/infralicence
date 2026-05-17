@@ -44,24 +44,27 @@ const Services = () => {
             <Star size={20} />
             <h3>Core Services</h3>
           </motion.div>
-          <div className="services-grid core-services">
+          <div className="core-services-horizontal">
             {coreServices.map((service, index) => {
               const IconComponent = iconMap[service.icon] || FileCheck;
               return (
                 <motion.div
                   key={service.id}
-                  className="service-card core"
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
+                  className="service-card-horizontal core"
+                  initial={{ opacity: 0, x: -30 }}
+                  whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   viewport={{ once: true }}
                 >
-                  <span className="service-badge">Core Service</span>
-                  <div className="service-icon">
-                    <IconComponent size={28} />
+                  <div className="horizontal-card-content">
+                    <div className="horizontal-icon">
+                      <IconComponent size={32} />
+                    </div>
+                    <div className="horizontal-text">
+                      <h3 className="service-title">{service.title}</h3>
+                      <p className="service-description">{service.description}</p>
+                    </div>
                   </div>
-                  <h3 className="service-title">{service.title}</h3>
-                  <p className="service-description">{service.description}</p>
                   <Link to={`/services/${service.id}`} className="service-link">
                     Learn more <ArrowRight size={16} />
                   </Link>
@@ -81,23 +84,27 @@ const Services = () => {
           >
             <h3>Supportive Services</h3>
           </motion.div>
-          <div className="services-grid supportive-services">
+          <div className="supportive-services-horizontal">
             {supportiveServices.map((service, index) => {
               const IconComponent = iconMap[service.icon] || FileCheck;
               return (
                 <motion.div
                   key={service.id}
-                  className="service-card supportive"
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
+                  className="service-card-horizontal supportive"
+                  initial={{ opacity: 0, x: -30 }}
+                  whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   viewport={{ once: true }}
                 >
-                  <div className="service-icon">
-                    <IconComponent size={28} />
+                  <div className="horizontal-card-content">
+                    <div className="horizontal-icon supportive-icon">
+                      <IconComponent size={32} />
+                    </div>
+                    <div className="horizontal-text">
+                      <h3 className="service-title">{service.title}</h3>
+                      <p className="service-description">{service.description}</p>
+                    </div>
                   </div>
-                  <h3 className="service-title">{service.title}</h3>
-                  <p className="service-description">{service.description}</p>
                   <Link to={`/services/${service.id}`} className="service-link">
                     Learn more <ArrowRight size={16} />
                   </Link>

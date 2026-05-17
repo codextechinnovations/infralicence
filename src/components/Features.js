@@ -56,12 +56,6 @@ const Features = () => {
           >
             <div className="features-image-wrapper">
               <div className="features-image">
-                <div className="features-stats-overlay">
-                  <div className="overlay-stat">
-                    <span className="overlay-stat-value">25,000+</span>
-                    <span className="overlay-stat-label">Trusted Clients</span>
-                  </div>
-                </div>
               </div>
               <div className="experience-badge">
                 <span className="exp-years">10+</span>
