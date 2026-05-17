@@ -6,7 +6,6 @@ import Hero from './components/Hero';
 import Stats from './components/Stats';
 import Services from './components/Services';
 import Features from './components/Features';
-import ClientLogos from './components/ClientLogos';
 import Testimonials from './components/Testimonials';
 import Process from './components/Process';
 import CTA from './components/CTA';
@@ -27,7 +26,6 @@ const Home = () => {
         <Stats />
         <Services />
         <Features />
-        <ClientLogos />
         <Testimonials />
         <Process />
         <CTA />

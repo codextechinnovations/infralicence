@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowLeft, CheckCircle, Clock, DollarSign, FileText, ChevronRight } from 'lucide-react';
+import { ArrowLeft, CheckCircle, Clock, DollarSign, FileText, ChevronRight, Globe } from 'lucide-react';
 import { servicesDetail } from '../data/servicesData';
 import './ServiceDetail.css';
 
@@ -114,6 +114,38 @@ const ServiceDetail = () => {
           </div>
         </div>
       </section>
+
+      {service.relatedService && (
+        <section className="service-related section">
+          <div className="container">
+            <motion.div
+              className="related-content"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+            >
+              <div className="related-header">
+                <Globe size={24} />
+                <span className="section-label">Special Provision</span>
+              </div>
+              <h2>{service.relatedService.title}</h2>
+              <p>{service.relatedService.description}</p>
+              <ul className="related-points">
+                {service.relatedService.points.map((point, index) => (
+                  <li key={index}>
+                    <CheckCircle size={18} />
+                    <span>{point}</span>
+                  </li>
+                ))}
+              </ul>
+              <Link to={`/services/out-of-state`} className="btn btn-primary">
+                Learn More <ChevronRight size={18} />
+              </Link>
+            </motion.div>
+          </div>
+        </section>
+      )}
 
       <section className="service-benefits section">
         <div className="container">

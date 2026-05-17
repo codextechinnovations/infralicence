@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FileText, Send, CheckCircle, ArrowRight } from 'lucide-react';
+import { FileText, Send, CheckCircle } from 'lucide-react';
 import { content } from '../data/content';
 import './Process.css';
 
@@ -40,11 +40,6 @@ const Process = () => {
               </div>
               <h3 className="step-title">{step.title}</h3>
               <p className="step-description">{step.description}</p>
-              {index < content.process.length - 1 && (
-                <div className="step-connector">
-                  <ArrowRight size={20} />
-                </div>
-              )}
             </motion.div>
           ))}
         </div>

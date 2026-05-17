@@ -19,6 +19,17 @@ export const servicesDetail = [
         'Class 3: For projects up to ₹10 Lakhs'
       ]
     },
+    relatedService: {
+      title: 'Out-of-State Contractor Support',
+      description: 'Special provisions for contractors from other states to obtain KPWD licenses and work on projects in Karnataka.',
+      points: [
+        'Simplified registration process for out-of-state contractors',
+        'Fast-track approval for contractors with valid licence from other states',
+        'Expert liaison with Karnataka PWD authorities',
+        'Joint venture and technical collaboration opportunities',
+        'Complete documentation support for inter-state applications'
+      ]
+    },
     benefits: [
       'Eligible for government construction projects',
       'Enhanced credibility and trust',

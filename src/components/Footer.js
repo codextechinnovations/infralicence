@@ -22,7 +22,7 @@ const Footer = () => {
                 <span className="brand-tagline">Consultancy & Solutions</span>
               </a>
               <p className="footer-description">
-                InfraLicence Consultancy and Solutions is a reliable consultancy dedicated to helping
+                InfraLicense Consultants & Solutions is a reliable consultancy dedicated to helping
                 clients obtain PWD contractor licenses and Electrical contractor licenses, while
                 offering complete guidance and support throughout the licensing process.
               </p>
@@ -108,7 +108,7 @@ const Footer = () => {
       <div className="footer-bottom">
         <div className="container">
           <div className="footer-bottom-content">
-            <p>&copy; 2025 InfraLicence Consultancy and Solutions. All rights reserved.</p>
+            <p>&copy; 2025 InfraLicense Consultants & Solutions. All rights reserved.</p>
             <p>Powered by <a href="https://crypticalsoftware.com" target="_blank" rel="noopener noreferrer">Cryptical Software</a></p>
           </div>
         </div>

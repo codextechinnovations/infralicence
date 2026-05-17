@@ -33,10 +33,37 @@
   margin-bottom: 16px;
 }
 
+.services-section {
+  margin-bottom: 48px;
+}
+
+.section-subheader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--light-gray);
+}
+
+.section-subheader svg {
+  color: var(--accent);
+}
+
+.section-subheader h3 {
+  font-size: 1.5rem;
+  color: var(--primary);
+  font-weight: 700;
+}
+
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
+}
+
+.core-services {
+  margin-bottom: 48px;
 }
 
 .service-card {
@@ -45,12 +72,37 @@
   padding: 32px;
   transition: all 0.3s ease;
   border: 1px solid transparent;
+  position: relative;
 }
 
-.service-card:hover {
+.service-card.core {
+  border-color: var(--primary);
+  background: linear-gradient(135deg, var(--white) 0%, rgba(28, 42, 69, 0.03) 100%);
+}
+
+.service-card.core:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
+  border-color: var(--accent);
+}
+
+.service-card.supportive:hover {
   transform: translateY(-8px);
   box-shadow: var(--shadow-xl);
   border-color: var(--primary);
+}
+
+.service-badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: var(--accent);
+  color: var(--white);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+  text-transform: uppercase;
 }
 
 .service-icon {
@@ -62,6 +114,10 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
+}
+
+.service-card.core .service-icon {
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-light) 100%);
 }
 
 .service-icon svg {
@@ -93,8 +149,16 @@
   transition: gap 0.2s ease;
 }
 
+.service-card.core .service-link {
+  color: var(--accent);
+}
+
 .service-link:hover {
   gap: 10px;
+}
+
+.service-card.core .service-link:hover {
+  color: var(--accent-dark);
 }
 
 .services-cta {
@@ -113,22 +177,30 @@
 
 @media (max-width: 1200px) {
   .services-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 992px) {
   .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .core-services {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 576px) {
-  .services-grid {
+  .service-card {
+    padding: 24px;
+  }
+
+  .core-services {
     grid-template-columns: 1fr;
   }
 
-  .service-card {
-    padding: 24px;
+  .section-subheader h3 {
+    font-size: 1.25rem;
   }
 }

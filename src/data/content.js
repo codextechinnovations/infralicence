@@ -1,7 +1,7 @@
 export const content = {
   company: {
-    name: 'InfraLicence',
-    tagline: 'Consultancy & Solutions',
+    name: 'InfraLicense',
+    tagline: 'Consultants & Solutions',
     email: 'info@infralicence.in',
     phone: '+91-9741821179',
     address: 'Karnataka, India',
@@ -17,52 +17,60 @@ export const content = {
 
   services: [
     {
-      id: 1,
+      id: 'kpwd-licence',
       title: 'KPWD Licence Registration',
       description: 'The KPWD Licence Registration Service assists contractors in obtaining a contractor\'s licence from the Karnataka Public Works Department (KPWD).',
-      icon: 'FileCheck'
+      icon: 'FileCheck',
+      type: 'core'
     },
     {
-      id: 2,
+      id: 'cpwd-licence',
       title: 'CPWD Contractor Registration',
       description: 'The CPWD Contractor Registration Service helps builders, engineers, and construction firms get registered with the Central Public Works Department (CPWD) of India.',
-      icon: 'Building2'
+      icon: 'Building2',
+      type: 'core'
     },
     {
-      id: 3,
+      id: 'electrical-licence',
       title: 'Electrical Contractor Licence',
       description: 'The Electrical Contractor Licence Registration Service in Karnataka helps electricians and firms obtain official approval from the Electrical Inspectorate, Government of Karnataka.',
-      icon: 'Zap'
+      icon: 'Zap',
+      type: 'core'
     },
     {
-      id: 4,
+      id: 'msme-registration',
       title: 'MSME Registration Service',
       description: 'The MSME Registration Service helps micro, small, and medium businesses register under the Ministry of Micro, Small & Medium Enterprises (MSME) through the Udyam Registration portal.',
-      icon: 'Briefcase'
+      icon: 'Briefcase',
+      type: 'supportive'
     },
     {
-      id: 5,
+      id: 'gst-registration',
       title: 'GST Registration Service',
       description: 'The GST Registration Service helps businesses obtain a Goods and Services Tax (GST) number from the Government of India.',
-      icon: 'Receipt'
+      icon: 'Receipt',
+      type: 'supportive'
     },
     {
-      id: 6,
+      id: 'dsc-services',
       title: 'DSC Key Services',
       description: 'The DSC (Digital Signature Certificate) Services help individuals and organizations obtain a secure digital signature for online authentication and document signing.',
-      icon: 'Key'
+      icon: 'Key',
+      type: 'supportive'
     },
     {
-      id: 7,
+      id: 'gem-services',
       title: 'GEM Services',
       description: 'Government e-Marketplace (GeM) is the Government of India\'s online portal where government departments buy products and services from registered sellers.',
-      icon: 'ShoppingCart'
+      icon: 'ShoppingCart',
+      type: 'supportive'
     },
     {
-      id: 8,
+      id: 'out-of-state',
       title: 'Out-of-State Contractor',
       description: 'Out-of-state contractors can access simplified procedures and additional support to obtain PWD licenses and work on projects in Karnataka.',
-      icon: 'Globe'
+      icon: 'Globe',
+      type: 'hidden'
     }
   ],
 
@@ -172,10 +180,10 @@ export const content = {
   ],
 
   serviceLinks: [
-    { label: 'KPWD Licence Registration', url: '/kpwd-licence-registration' },
-    { label: 'GST Registration Service', url: '/gst-registration-service' },
-    { label: 'DSC Key Services', url: '/digital-signature-certificate-service' },
-    { label: 'MSME Registration Service', url: '/msme-registration-service' }
+    { label: 'KPWD Licence Registration', url: '/services/kpwd-licence' },
+    { label: 'GST Registration Service', url: '/services/gst-registration' },
+    { label: 'DSC Key Services', url: '/services/dsc-services' },
+    { label: 'MSME Registration Service', url: '/services/msme-registration' }
   ],
 
   socialLinks: [
