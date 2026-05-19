@@ -14,9 +14,8 @@ export const servicesDetail = [
       title: 'What is KPWD Licence?',
       content: 'The Karnataka Public Works Department (KPWD) contractor licence is mandatory for contractors who wish to undertake government construction projects in Karnataka. This licence classifies contractors into different classes based on their financial capability and experience.',
       points: [
-        'Class 1: For projects above ₹50 Lakhs',
-        'Class 2: For projects up to ₹50 Lakhs',
-        'Class 3: For projects up to ₹10 Lakhs'
+        'Entry Level: Start with Class 4 or Class 3',
+        'Progression Path: Class 3 → Class 2 → Class 1'
       ]
     },
     relatedService: {
@@ -38,20 +37,21 @@ export const servicesDetail = [
       'Business growth opportunities'
     ],
     eligibility: [
-      'Indian citizen or registered business entity',
-      'Minimum experience in construction field',
-      'Financial capability as per licence class',
-      'Required infrastructure and equipment',
-      'No criminal record'
+      'Indian citizen or registered business entity (Individual, LLP, or Company)',
+      'Financial capability as per licence class (Solvency requirements)',
+      'Work completion certificates for required project values',
+      'Civil Engineering degree/diploma (provides relaxation in experience proofs)',
+      'Required infrastructure and equipment for the chosen class',
+      'No criminal record and valid tax filings'
     ],
     documents: [
-      'Aadhaar Card / Passport',
-      'Address Proof',
-      'Educational Certificates',
-      'Experience Certificates',
-      'Financial Documents',
-      'Photographs',
-      'Business Registration Documents'
+      'Common: Aadhaar, PAN, Address Proof, IT Returns, CA Certificate',
+      'Common: Bank Solvency & Work Completion Certificates',
+      'Common: ₹100 Stamp Affidavit, Registration & QR Licence Fee',
+      'Proprietorship: GST Registration, Business License',
+      'Partnership: Partnership Deed, Firm Registration, Firm PAN, Partners KYC, GST',
+      'Private Ltd: Incorporation Cert, MOA & AOA, Director KYC, Company PAN, GST',
+      'BE/Diploma Holder: Engineering Degree/Diploma Certificate'
     ],
     process: [
       { step: 1, title: 'Application Form', description: 'Fill the KPWD application form with accurate details' },
@@ -60,8 +60,212 @@ export const servicesDetail = [
       { step: 4, title: 'Inspection', description: 'Physical verification of premises and equipment' },
       { step: 5, title: 'Licence Issue', description: 'Receive your KPWD contractor licence' }
     ],
-    pricing: 'Starting from ₹15,000',
+    pricing: 'Starting from ₹6,000',
     timeline: '15-30 working days'
+  },
+  {
+    id: 'kpwd-class-1',
+    title: 'KPWD Class 1 Contractor',
+    shortTitle: 'Class 1',
+    icon: 'FileCheck',
+    hero: {
+      title: 'KPWD Class 1 Registration',
+      subtitle: 'Top-tier certification for large-scale government infrastructure projects.',
+      description: 'Class 1 registration allows you to bid for the highest value projects in Karnataka. We handle the complex solvency and experience documentation required for this elite class.',
+      image: null
+    },
+    overview: {
+      title: 'Class 1 Requirements',
+      content: 'The most prestigious class for civil contractors. This is a top-tier upgrade that requires a proven track record as a Class 2 contractor and significant financial backing.',
+      points: [
+        'Requirement: Must be upgraded from Class 2',
+        'Registration Fee: ₹25,000'
+      ]
+    },
+    benefits: [
+      'Eligible for the largest government tenders',
+      'Maximum project value capacity',
+      'Highest industry recognition',
+      'Ability to act as a lead contractor for mega projects'
+    ],
+    eligibility: [
+      'Proof of ₹25L Solvency',
+      'Completion of at least one project worth ₹25L',
+      'Cumulative experience of ₹75L in 5 years',
+      'Technical staff qualified as per Class 1 norms'
+    ],
+    documents: [
+      'Common: Aadhaar, PAN, Address Proof, IT Returns, CA Certificate',
+      'Common: Bank Solvency (₹25L+) & Work Completion (Total ₹75L+)',
+      'Common: ₹100 Stamp Affidavit, Registration & QR Licence Fee',
+      'Proprietorship: GST Registration, Business License',
+      'Partnership: Partnership Deed, Firm Registration, Firm PAN, Partners KYC, GST',
+      'Private Ltd: Incorporation Cert, MOA & AOA, Director KYC, Company PAN, GST',
+      'BE/Diploma Holder: Engineering Degree/Diploma Certificate',
+      'Class 1 Specific: Detailed Company Profile, Lead Engineers Qualifications'
+    ],
+    process: [
+      { step: 1, title: 'Experience Audit', description: 'Verify work completion certificates against Class 1 norms' },
+      { step: 2, title: 'Solvency Verification', description: 'Submit bank-certified solvency proofs' },
+      { step: 3, title: 'Documentation', description: 'Compile all technical and financial dossiers' },
+      { step: 4, title: 'Govt Submission', description: 'Liaise with KPWD for high-level verification' },
+      { step: 5, title: 'Certification', description: 'Obtain Class 1 License' }
+    ],
+    pricing: 'Registration Fee: ₹25,000',
+    timeline: '30-45 working days'
+  },
+  {
+    id: 'kpwd-class-2',
+    title: 'KPWD Class 2 Contractor',
+    shortTitle: 'Class 2',
+    icon: 'FileCheck',
+    hero: {
+      title: 'KPWD Class 2 Registration',
+      subtitle: 'Mid-tier certification for medium-scale government construction projects.',
+      description: 'Class 2 is ideal for established contractors looking to scale their operations. We ensure your experience and solvency documents are perfectly aligned with PWD requirements.',
+      image: null
+    },
+    overview: {
+      title: 'Class 2 Requirements',
+      content: 'Designed for established contractors looking to scale. This mid-level certification is an upgrade for those who have successfully operated as Class 3 contractors.',
+      points: [
+        'Requirement: Must be upgraded from Class 3',
+        'Registration Fee: ₹15,000'
+      ]
+    },
+    benefits: [
+      'Access to mid-sized government tenders',
+      'Scalable growth path to Class 1',
+      'Increased credibility with government departments',
+      'Better project margins than lower classes'
+    ],
+    eligibility: [
+      'Proof of ₹10L Solvency',
+      'Completion of at least one project worth ₹10L',
+      'Cumulative experience of ₹30L in 5 years',
+      'Technical qualifications as per Class 2 norms'
+    ],
+    documents: [
+      'Common: Aadhaar, PAN, Address Proof, IT Returns, CA Certificate',
+      'Common: Bank Solvency (₹10L+) & Work Completion (Total ₹30L+)',
+      'Common: ₹100 Stamp Affidavit, Registration & QR Licence Fee',
+      'Proprietorship: GST Registration, Business License',
+      'Partnership: Partnership Deed, Firm Registration, Firm PAN, Partners KYC, GST',
+      'Private Ltd: Incorporation Cert, MOA & AOA, Director KYC, Company PAN, GST',
+      'BE/Diploma Holder: Engineering Degree/Diploma Certificate',
+      'Class 2 Specific: Tax Returns (3 Years), Technical Staff Certs'
+    ],
+    process: [
+      { step: 1, title: 'Experience Review', description: 'Verify mid-scale project completion certificates' },
+      { step: 2, title: 'Financial Check', description: 'Submit required solvency and tax documents' },
+      { step: 3, title: 'Application', description: 'Fill and submit Class 2 application form' },
+      { step: 4, title: 'Verification', description: 'Coordinate with PWD for document validation' },
+      { step: 5, title: 'Certification', description: 'Obtain Class 2 License' }
+    ],
+    pricing: 'Registration Fee: ₹15,000',
+    timeline: '20-30 working days'
+  },
+  {
+    id: 'kpwd-class-3',
+    title: 'KPWD Class 3 Contractor',
+    shortTitle: 'Class 3',
+    icon: 'FileCheck',
+    hero: {
+      title: 'KPWD Class 3 Registration',
+      subtitle: 'Entry-to-mid level certification for smaller government works.',
+      description: 'Perfect for contractors transitioning from private to government work. We help you organize your smaller project proofs to meet Class 3 eligibility.',
+      image: null
+    },
+    overview: {
+      title: 'Class 3 Requirements',
+      content: 'An entry-level class for those with emerging experience in civil construction, providing a gateway to government contracting.',
+      points: [
+        'Level: Entry Level',
+        'Registration Fee: ₹9,000'
+      ]
+    },
+    benefits: [
+      'Entry into government contracting',
+      'Lower financial barriers to entry',
+      'Build a government track record',
+      'Opportunity for rapid upgrading'
+    ],
+    eligibility: [
+      'Proof of ₹2L Solvency',
+      'Completion of at least one project worth ₹2L',
+      'Cumulative experience of ₹10L in 5 years',
+      'Basic technical qualification'
+    ],
+    documents: [
+      'Common: Aadhaar, PAN, Address Proof, IT Returns, CA Certificate',
+      'Common: Bank Solvency (₹2L+) & Work Completion (Total ₹10L+)',
+      'Common: ₹100 Stamp Affidavit, Registration & QR Licence Fee',
+      'Proprietorship: GST Registration, Business License',
+      'Partnership: Partnership Deed, Firm Registration, Firm PAN, Partners KYC, GST',
+      'Private Ltd: Incorporation Cert, MOA & AOA, Director KYC, Company PAN, GST',
+      'BE/Diploma Holder: Engineering Degree/Diploma Certificate',
+      'Class 3 Specific: Basic Financial Statements, Educational Certs'
+    ],
+    process: [
+      { step: 1, title: 'Document Prep', description: 'Collect and verify small-scale project proofs' },
+      { step: 2, title: 'Solvency Prep', description: 'Arrange bank solvency certificate' },
+      { step: 3, title: 'Submission', description: 'Submit Class 3 application' },
+      { step: 4, title: 'Approval', description: 'Verification by PWD authorities' },
+      { step: 5, title: 'Certification', description: 'Obtain Class 3 License' }
+    ],
+    pricing: 'Registration Fee: ₹9,000',
+    timeline: '15-25 working days'
+  },
+  {
+    id: 'kpwd-class-4',
+    title: 'KPWD Class 4 Contractor',
+    shortTitle: 'Class 4',
+    icon: 'FileCheck',
+    hero: {
+      title: 'KPWD Class 4 Registration',
+      subtitle: 'The easiest entry point for new contractors entering government work.',
+      description: 'The ideal starting point for new firms, individual engineers, or small businesses. We make the first step into government contracting effortless.',
+      image: null
+    },
+    overview: {
+      title: 'Class 4 Requirements',
+      content: 'The primary entry-level class designed for new entrepreneurs, fresh engineers, and small businesses to start their journey.',
+      points: [
+        'Level: Entry Level',
+        'Registration Fee: ₹6,000'
+      ]
+    },
+    benefits: [
+      'Lowest entry barrier',
+      'Fastest registration process',
+      'Ideal for fresh graduates (BE/Diploma)',
+      'Perfect for testing the government work market'
+    ],
+    eligibility: [
+      'Proof of ₹50k Solvency',
+      'Completion of at least one project worth ₹50k',
+      'Cumulative experience of ₹5L in 5 years',
+      'BE Civil / Diploma (Significant relaxations available)'
+    ],
+    documents: [
+      'Common: Aadhaar, PAN, Address Proof, IT Returns, CA Certificate',
+      'Common: Bank Solvency (₹50k+) & Work Completion Proofs',
+      'Common: ₹100 Stamp Affidavit, Registration & QR Licence Fee',
+      'Proprietorship: GST Registration, Business License',
+      'Partnership: Partnership Deed, Firm Registration, Firm PAN, Partners KYC, GST',
+      'Private Ltd: Incorporation Cert, MOA & AOA, Director KYC, Company PAN, GST',
+      'BE/Diploma Holder: Engineering Degree/Diploma Certificate',
+      'Class 4 Specific: Basic Identity and Tax Proofs'
+    ],
+    process: [
+      { step: 1, title: 'Qualification Check', description: 'Verify educational degrees for relaxation' },
+      { step: 2, title: 'Basic Solvency', description: 'Arrange minimal solvency proof' },
+      { step: 3, title: 'Simple Application', description: 'Submit Class 4 application form' },
+      { step: 4, title: 'Approval', description: 'Quick verification by PWD' },
+      { step: 5, title: 'Certification', description: 'Obtain Class 4 License' }
+    ],
+    pricing: 'Registration Fee: ₹6,000',
+    timeline: '10-20 working days'
   },
   {
     id: 'cpwd-licence',

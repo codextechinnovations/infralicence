@@ -64,6 +64,48 @@ const ServiceDetail = () => {
         </div>
       </section>
 
+      {service.id === 'kpwd-licence' && (
+        <section className="service-classes section">
+          <div className="container">
+            <motion.div 
+              className="section-header"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+            >
+              <span className="section-label">Available Classes</span>
+              <h2 className="section-title">Choose Your Contractor Class</h2>
+              <p className="section-subtitle">Select the class that matches your financial capacity and experience to see detailed requirements.</p>
+            </motion.div>
+            <div className="classes-grid">
+              {[
+                { id: 'kpwd-class-1', title: 'Class 1', desc: 'Mega projects, High Solvency', price: '₹25,000' },
+                { id: 'kpwd-class-2', title: 'Class 2', desc: 'Medium projects, Mid Solvency', price: '₹15,000' },
+                { id: 'kpwd-class-3', title: 'Class 3', desc: 'Small projects, Low Solvency', price: '₹9,000' },
+                { id: 'kpwd-class-4', title: 'Class 4', desc: 'Entry level, Minimal Solvency', price: '₹6,000' },
+              ].map((cls, index) => (
+                <motion.div 
+                  key={cls.id}
+                  className="class-card"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.3, delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                >
+                  <h3>{cls.title}</h3>
+                  <p>{cls.desc}</p>
+                  <div className="class-price">{cls.price}</div>
+                  <Link to={`/services/${cls.id}`} className="btn btn-outline full-width">
+                    View Details <ChevronRight size={16} />
+                  </Link>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       <section className="service-overview section">
         <div className="container">
           <div className="overview-grid">
@@ -110,6 +152,49 @@ const ServiceDetail = () => {
               <Link to="/contact" className="btn btn-primary full-width">
                 Enquire Now
               </Link>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      <section className="service-eligibility section">
+        <div className="container">
+          <div className="eligibility-grid">
+            <motion.div
+              className="eligibility-content"
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+            >
+              <span className="section-label">Eligibility</span>
+              <h2>Who Can Apply?</h2>
+              <ul className="eligibility-list">
+                {service.eligibility.map((item, index) => (
+                  <li key={index}>
+                    <CheckCircle size={18} />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
+            <motion.div
+              className="documents-content"
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              viewport={{ once: true }}
+            >
+              <span className="section-label">Documents</span>
+              <h2>Required Documents</h2>
+              <ul className="documents-list">
+                {service.documents.map((doc, index) => (
+                  <li key={index}>
+                    <FileText size={18} />
+                    <span>{doc}</span>
+                  </li>
+                ))}
+              </ul>
             </motion.div>
           </div>
         </div>
@@ -175,49 +260,6 @@ const ServiceDetail = () => {
                 <p>{benefit}</p>
               </motion.div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="service-eligibility section">
-        <div className="container">
-          <div className="eligibility-grid">
-            <motion.div
-              className="eligibility-content"
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5 }}
-              viewport={{ once: true }}
-            >
-              <span className="section-label">Eligibility</span>
-              <h2>Who Can Apply?</h2>
-              <ul className="eligibility-list">
-                {service.eligibility.map((item, index) => (
-                  <li key={index}>
-                    <CheckCircle size={18} />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </motion.div>
-            <motion.div
-              className="documents-content"
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              viewport={{ once: true }}
-            >
-              <span className="section-label">Documents</span>
-              <h2>Required Documents</h2>
-              <ul className="documents-list">
-                {service.documents.map((doc, index) => (
-                  <li key={index}>
-                    <FileText size={18} />
-                    <span>{doc}</span>
-                  </li>
-                ))}
-              </ul>
-            </motion.div>
           </div>
         </div>
       </section>
