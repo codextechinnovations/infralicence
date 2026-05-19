@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import { Helmet } from 'react-helmet-async';
 import { Phone, Mail, MapPin, Clock, Send, MessageSquare, ArrowRight } from 'lucide-react';
 import { content } from '../data/content';
 import { servicesDetail } from '../data/servicesData';
 import './Contact.css';
-
+ 
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -28,6 +29,10 @@ const Contact = () => {
 
   return (
     <div className="contact-page">
+      <Helmet>
+        <title>Contact Us | InfraLicence - PWD Licensing Experts</title>
+        <meta name="description" content="Get in touch with InfraLicence for expert guidance on PWD licensing, contractor registration, and infrastructure compliance. Free consultation available." />
+      </Helmet>
       <section className="contact-hero">
         <div className="contact-hero-bg"></div>
         <div className="container">

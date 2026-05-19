@@ -197,6 +197,7 @@
 @media (max-width: 576px) {
   .footer-grid {
     grid-template-columns: 1fr;
+    gap: 24px;
   }
 
   .footer-brand {
@@ -207,13 +208,54 @@
     grid-column: span 1;
   }
 
+  .footer-main {
+    padding: 40px 0 24px;
+  }
+
+  .footer-logo {
+    margin-bottom: 12px;
+  }
+
+  .footer-logo .brand-text {
+    font-size: 1.25rem;
+  }
+
+  .footer-description,
+  .footer-links a,
+  .footer-contact li,
+  .footer-newsletter p {
+    font-size: 0.875rem;
+    line-height: 1.6;
+  }
+
+  .footer-links h4,
+  .footer-contact h4,
+  .footer-newsletter h4 {
+    margin-bottom: 12px;
+    font-size: 0.9375rem;
+  }
+
+  .footer-links ul,
+  .footer-contact ul {
+    gap: 10px;
+  }
+
   .newsletter-form {
     flex-direction: column;
   }
 
+  .input-wrapper input,
+  .newsletter-form .btn-primary {
+    font-size: 0.875rem;
+  }
+
   .footer-bottom-content {
     flex-direction: column;
-    gap: 12px;
+    gap: 8px;
     text-align: center;
+  }
+
+  .footer-bottom {
+    padding: 14px 0;
   }
 }

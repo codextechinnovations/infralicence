@@ -11,7 +11,7 @@
   justify-content: center;
   color: white;
   box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
-  z-index: 1000;
+  z-index: 1102;
   transition: all 0.3s ease;
   animation: pulse 2s infinite;
 }

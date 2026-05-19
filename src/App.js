@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { Helmet } from 'react-helmet-async';
 import Navbar from './components/Navbar';
 import WhatsAppButton from './components/WhatsAppButton';
 import Hero from './components/Hero';
@@ -13,7 +14,7 @@ import Footer from './components/Footer';
 import ServiceDetail from './pages/ServiceDetail';
 import About from './pages/About';
 import Contact from './pages/Contact';
-
+ 
 const Home = () => {
   return (
     <motion.div
@@ -21,6 +22,10 @@ const Home = () => {
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
     >
+      <Helmet>
+        <title>InfraLicence | Consultants & Solutions - PWD Licensing Experts</title>
+        <meta name="description" content="Expert PWD licensing, contractor registration, and infrastructure compliance services in Karnataka, India. We simplify the process for Class 1, 2, 3, and 4 contractors." />
+      </Helmet>
       <main>
         <Hero />
         <Stats />
@@ -32,7 +37,7 @@ const Home = () => {
     </motion.div>
   );
 };
-
+ 
 function App() {
   return (
     <Router>
@@ -49,5 +54,5 @@ function App() {
     </Router>
   );
 }
-
+ 
 export default App;

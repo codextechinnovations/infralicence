@@ -183,19 +183,42 @@
   }
 
   .process-steps {
-    gap: 24px;
+    gap: 18px;
+  }
+
+  .process-step {
+    padding: 20px 16px;
+    border-radius: var(--radius-lg);
   }
 
   .step-icon {
-    width: 48px;
-    height: 48px;
+    width: 42px;
+    height: 42px;
+    margin-bottom: 12px;
+  }
+
+  .step-icon svg {
+    width: 18px;
+    height: 18px;
   }
 
   .step-title {
-    font-size: 0.9375rem;
+    font-size: 0.875rem;
+    margin-bottom: 6px;
   }
 
   .step-description {
     font-size: 0.75rem;
+    margin-bottom: 12px;
+    line-height: 1.55;
+  }
+
+  .step-details {
+    gap: 6px;
+  }
+
+  .step-details li {
+    font-size: 0.75rem;
+    padding: 5px 10px;
   }
 }

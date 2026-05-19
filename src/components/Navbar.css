@@ -179,6 +179,10 @@
 }
 
 @media (max-width: 992px) {
+  .navbar {
+    padding: 10px 0;
+  }
+
   .navbar-top {
     display: none;
   }
@@ -193,5 +197,41 @@
 
   .mobile-menu {
     display: block;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-container {
+    padding: 0 16px;
+    gap: 12px;
+  }
+
+  .brand-text {
+    font-size: 1.2rem;
+  }
+
+  .brand-tagline {
+    font-size: 0.625rem;
+    letter-spacing: 0.3px;
+  }
+
+  .mobile-menu {
+    max-width: 100%;
+  }
+
+  .mobile-menu-header,
+  .mobile-menu-content,
+  .mobile-menu-contact {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .mobile-nav-link {
+    padding: 13px 0;
+    font-size: 1rem;
+  }
+
+  .mobile-contact-item {
+    font-size: 0.875rem;
   }
 }

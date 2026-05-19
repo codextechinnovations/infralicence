@@ -1,13 +1,14 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Helmet } from 'react-helmet-async';
 import { Award, Users, Target, Shield, Clock, TrendingUp, ArrowRight, CheckCircle } from 'lucide-react';
 import './About.css';
-
+ 
 const About = () => {
   const stats = [
     { value: '10+', label: 'Years Experience', icon: Clock },
-    { value: '25,000+', label: 'Clients Served', icon: Users },
-    { value: '₹1,766 Cr', label: 'Processed Value', icon: TrendingUp },
+    { value: '100+', label: 'Clients Served', icon: Users },
+    { value: 'Query Resolution', label: 'Processed Value', icon: TrendingUp },
     { value: '98%', label: 'Success Rate', icon: Award }
   ];
 
@@ -41,15 +42,19 @@ const About = () => {
   ];
 
   const achievements = [
-    'Successfully processed 25,000+ PWD licenses',
+    'Successfully processed 100+ client requirements',
     '98% first-time approval rate',
     'Pan-India service coverage',
     'Average processing time 40% faster than industry',
-    '100+ government department tie-ups'
+    'Strong support across licensing and compliance documentation'
   ];
 
   return (
     <div className="about-page">
+      <Helmet>
+        <title>About Us | InfraLicence - PWD Licensing Experts</title>
+        <meta name="description" content="Learn more about InfraLicence, your trusted partner for PWD licensing and infrastructure compliance in Karnataka. Expert consultancy with a proven track record." />
+      </Helmet>
       <section className="about-hero">
         <div className="about-hero-bg"></div>
         <div className="container">

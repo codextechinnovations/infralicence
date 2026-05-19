@@ -104,3 +104,33 @@
     gap: 16px;
   }
 }
+
+@media (max-width: 576px) {
+  .cta-title {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+  }
+
+  .cta-subtitle {
+    font-size: 0.875rem;
+    margin-bottom: 24px;
+    line-height: 1.6;
+  }
+
+  .cta-actions {
+    gap: 16px;
+  }
+
+  .cta-actions .btn-primary {
+    width: 100%;
+  }
+
+  .cta-contact-info {
+    gap: 10px;
+  }
+
+  .cta-contact-item {
+    font-size: 0.875rem;
+    gap: 8px;
+  }
+}

@@ -417,45 +417,236 @@
 }
 
 @media (max-width: 992px) {
+  .service-detail-page {
+    padding-top: 72px;
+  }
+
+  .service-hero {
+    padding: 64px 0;
+  }
+
+  .service-hero-content {
+    max-width: 100%;
+  }
+
+  .service-hero h1 {
+    font-size: 2rem;
+  }
+
+  .service-hero .service-subtitle {
+    font-size: 1.0625rem;
+  }
+
+  .service-hero .service-description {
+    font-size: 0.9375rem;
+    line-height: 1.65;
+  }
+
   .overview-grid {
     grid-template-columns: 1fr;
+    gap: 32px;
   }
 
   .overview-card {
     order: -1;
+    padding: 24px;
   }
 
   .benefits-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
   }
 
   .eligibility-grid {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 32px;
   }
 
   .process-steps {
     grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .classes-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
   }
 }
 
-...
 @media (max-width: 576px) {
+  .service-detail-page {
+    padding-top: 68px;
+  }
+
+  .service-hero {
+    padding: 48px 0 36px;
+  }
+
+  .service-hero .back-link {
+    margin-bottom: 16px;
+    font-size: 0.875rem;
+  }
+
+  .service-hero .service-icon {
+    font-size: 2.25rem;
+    margin-bottom: 10px;
+  }
+
   .service-hero h1 {
     font-size: 1.75rem;
+    margin-bottom: 12px;
+  }
+
+  .service-hero .service-subtitle {
+    font-size: 0.9375rem;
+    margin-bottom: 10px;
+  }
+
+  .service-hero .service-description {
+    font-size: 0.875rem;
+    line-height: 1.6;
+    margin-bottom: 18px;
   }
 
   .service-hero-meta {
     flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .service-classes {
+    padding: 40px 0;
+  }
+
+  .service-classes .section-header {
+    margin-bottom: 24px;
+  }
+
+  .service-classes .section-subtitle {
+    margin-bottom: 0;
+    font-size: 0.875rem;
+  }
+
+  .classes-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .overview-grid,
+  .eligibility-grid {
+    gap: 24px;
+  }
+
+  .overview-content p,
+  .related-content > p,
+  .benefit-card p,
+  .process-step-item p {
+    font-size: 0.875rem;
+    line-height: 1.6;
+  }
+
+  .overview-card,
+  .benefit-card,
+  .process-step-item,
+  .class-card {
+    padding: 18px;
+  }
+
+  .overview-card h3,
+  .eligibility-content h2,
+  .documents-content h2,
+  .related-content h2,
+  .cta-box h2 {
+    font-size: 1.25rem;
+    margin-bottom: 14px;
+  }
+
+  .quick-info-item {
     gap: 12px;
+    padding: 12px 0;
+  }
+
+  .quick-info-item .label,
+  .quick-info-item .value,
+  .eligibility-list li,
+  .documents-list li,
+  .overview-points li,
+  .related-points li,
+  .class-card p {
+    font-size: 0.875rem;
+  }
+
+  .class-card h3 {
+    font-size: 1.0625rem;
+  }
+
+  .class-price {
+    font-size: 1rem;
+    margin-bottom: 16px;
+  }
+
+  .benefits-grid,
+  .process-steps {
+    grid-template-columns: 1fr;
   }
 
   .benefits-grid {
-    grid-template-columns: 1fr;
+    gap: 14px;
   }
 
   .process-steps {
-    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .related-points {
+    gap: 10px;
+    margin-bottom: 24px;
+  }
+
+  .benefit-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 12px;
+  }
+
+  .process-step-item .step-number {
+    margin-bottom: 10px;
+    font-size: 0.6875rem;
+    padding: 4px 10px;
+  }
+
+  .process-step-item h3 {
+    font-size: 0.9375rem;
+    margin-bottom: 6px;
+  }
+
+  .cta-box p {
+    font-size: 0.875rem;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .service-hero {
+    padding: 42px 0 32px;
+  }
+
+  .service-hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .service-hero .service-subtitle,
+  .service-hero .service-description,
+  .overview-content p,
+  .related-content > p {
+    font-size: 0.8125rem;
+  }
+
+  .overview-card,
+  .benefit-card,
+  .process-step-item,
+  .class-card {
+    padding: 16px;
   }
 }
 
@@ -517,16 +708,4 @@
   font-weight: 700;
   color: var(--accent);
   margin-bottom: 24px;
-}
-
-@media (max-width: 992px) {
-  .classes-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 576px) {
-  .classes-grid {
-    grid-template-columns: 1fr;
-  }
 }
