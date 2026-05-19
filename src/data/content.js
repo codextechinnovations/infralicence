@@ -18,7 +18,7 @@ export const content = {
     {
       id: 'kpwd-licence',
       title: 'KPWD Licence Registration',
-      description: 'The KPWD Licence Registration Service assists contractors in obtaining a contractor\'s licence from the Karnataka Public Works Department (KPWD).',
+      description: 'Comprehensive support for Karnataka PWD contractor licenses across Class 1, 2, 3, and 4 categories, tailored to your experience and financial capacity.',
       icon: 'FileCheck',
       type: 'core'
     },

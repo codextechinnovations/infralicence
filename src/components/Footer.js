@@ -19,7 +19,7 @@ const Footer = () => {
             <div className="footer-brand">
               <a href="/" className="footer-logo">
                 <span className="brand-text">InfraLicence</span>
-                <span className="brand-tagline">Consultancy & Solutions</span>
+                 <span className="brand-tagline">Consultants & Solutions</span>
               </a>
               <p className="footer-description">
                 InfraLicense Consultants & Solutions is a reliable consultancy dedicated to helping

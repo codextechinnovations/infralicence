@@ -26,7 +26,7 @@ const Navbar = () => {
     { label: 'Contact', url: '/contact' }
   ];
 
-  const serviceSubItems = servicesDetail.slice(0, 6);
+  const serviceSubItems = servicesDetail.filter(s => !s.id.includes('kpwd-class-')).slice(0, 6);
 
   return (
     <>
@@ -34,7 +34,7 @@ const Navbar = () => {
         <div className="navbar-container">
           <Link to="/" className="navbar-brand">
             <span className="brand-text">InfraLicence</span>
-            <span className="brand-tagline">Consultancy & Solutions</span>
+             <span className="brand-tagline">Consultants & Solutions</span>
           </Link>
 
           <div className="navbar-top">

@@ -17,7 +17,7 @@ const Hero = () => {
             transition={{ duration: 0.5 }}
           >
             <span className="badge-dot"></span>
-            Trusted Licensing Consultancy
+             Trusted Licensing Consultants
           </motion.div>
 
           <motion.h1

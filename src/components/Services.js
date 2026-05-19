@@ -82,7 +82,7 @@ const Services = () => {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            <h3>Supportive Services</h3>
+             <h3>Documentation & Eligibility Support</h3>
           </motion.div>
           <div className="supportive-services-horizontal">
             {supportiveServices.map((service, index) => {
