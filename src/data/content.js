@@ -95,7 +95,7 @@ export const content = {
       description: 'Licence + DSC + Tender Submission in one place'
     },
     {
-      title: 'Trusted by 25,000+ Clients',
+       title: 'Trusted by 100+ Clients',
       description: 'World-class brands and organizations of all sizes trust us'
     }
   ],

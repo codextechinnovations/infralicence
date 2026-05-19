@@ -85,7 +85,7 @@ const Hero = () => {
             </div>
             <div className="feature-item">
               <Award size={20} />
-              <span>25,000+ Clients</span>
+               <span>100+ Clients</span>
             </div>
           </motion.div>
         </div>
