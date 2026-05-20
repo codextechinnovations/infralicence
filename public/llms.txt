@@ -1,0 +1,42 @@
+# InfraLicence
+
+> InfraLicence Consultants & Solutions provides Karnataka-focused licensing, contractor registration, and compliance support services.
+
+Canonical: https://infralicence.in/
+
+## Summary
+
+- Primary focus: KPWD contractor registration and licensing support
+- Secondary services: CPWD registration, electrical licence, MSME, GST, DSC, GeM
+- Audience: contractors, civil engineers, firms, LLPs, and private limited companies
+- Geography: Karnataka, India
+
+## Main Pages
+
+- Home: https://infralicence.in/
+- About: https://infralicence.in/about
+- Contact: https://infralicence.in/contact
+- Services: https://infralicence.in/services
+
+## Key Services
+
+- KPWD Contractor Registration: https://infralicence.in/services/kpwd-licence
+- KPWD Class 1: https://infralicence.in/services/kpwd-class-1
+- KPWD Class 2: https://infralicence.in/services/kpwd-class-2
+- KPWD Class 3: https://infralicence.in/services/kpwd-class-3
+- KPWD Class 4: https://infralicence.in/services/kpwd-class-4
+- CPWD Contractor Registration: https://infralicence.in/services/cpwd-licence
+- Electrical Contractor Licence: https://infralicence.in/services/electrical-licence
+- MSME Registration: https://infralicence.in/services/msme-registration
+- GST Registration: https://infralicence.in/services/gst-registration
+- DSC Services: https://infralicence.in/services/dsc-services
+- GeM Services: https://infralicence.in/services/gem-services
+
+## Contact
+ 
+- Email: info@infralicence.in
+- Location: Karnataka, India
+
+## Extended Reference
+
+- Full LLM reference: https://infralicence.in/llms-full.txt

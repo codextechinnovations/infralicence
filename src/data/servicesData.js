@@ -330,16 +330,16 @@ export const servicesDetail = [
     hero: {
       title: 'Electrical Contractor Licence - Karnataka',
       subtitle: 'Obtain official approval from the Electrical Inspectorate, Government of Karnataka.',
-      description: 'Get your electrical contractor licence from the Electrical Inspectorate, Government of Karnataka. We handle the entire process including documentation, inspection coordination, and licence acquisition.',
+      description: 'Get your electrical contractor licence from the Electrical Inspectorate, Government of Karnataka. We provide end-to-end support for Class II, Class I, and SuperGrade certifications, including documentation and instrument verification guidance.',
       image: null
     },
     overview: {
       title: 'What is Electrical Contractor Licence?',
-      content: 'The Electrical Contractor Licence is required for firms and individuals undertaking electrical works in Karnataka. This licence is issued by the Electrical Inspectorate under the Indian Electricity Rules.',
+      content: 'The Electrical Contractor Licence is mandatory for firms and individuals undertaking electrical works in Karnataka. It is issued by the Electrical Inspectorate under the Indian Electricity Rules.',
       points: [
-        'Class A: For works above ₹25 Lakhs',
-        'Class B: For works up to ₹25 Lakhs',
-        'Class C: For works up to ₹10 Lakhs'
+        'SuperGrade: Premium certification for high-value projects',
+        'Class I: For medium to large scale electrical works',
+        'Class II: For small to medium scale electrical works'
       ]
     },
     benefits: [
@@ -350,30 +350,32 @@ export const servicesDetail = [
       'Professional credibility'
     ],
     eligibility: [
-      'Indian citizen or registered firm',
-      'ITI/Diploma in Electrical Engineering',
+      'Indian citizen or registered firm (Individual, Company, or Partnership)',
+      'ITI/Diploma or Degree in Electrical Engineering',
       'Minimum experience in electrical works',
-      'Adequate testing equipment',
+      'Adequate testing equipment as per class requirements',
       'Qualified electrical supervisor'
     ],
     documents: [
       'Educational Certificates',
       'Experience Certificates',
-      'Equipment List',
+      'List of Testing Instruments',
       'Supervisor Credentials',
       'Address Proof',
       'Photographs',
-      'Firm Registration'
+      'Firm Registration / Incorporation Documents'
     ],
     process: [
-      { step: 1, title: 'Application', description: 'Submit application to Electrical Inspectorate' },
-      { step: 2, title: 'Document Verification', description: 'Provide all required documents' },
-      { step: 3, title: 'Site Inspection', description: 'Inspection of office and equipment' },
-      { step: 4, title: 'Supervisor Test', description: 'Qualified supervisor verification' },
-      { step: 5, title: 'Licence Grant', description: 'Receive electrical contractor licence' }
+      { step: 1, title: 'Online Application', description: 'Login to the official Seva Sindhu portal and fill in the mandatory application fields' },
+      { step: 2, title: 'Document Upload', description: 'Upload scanned copies of required documents and the list of testing instruments' },
+      { step: 3, title: 'Fee Payment', description: 'Make the online payment of prescribed fees (Class II: ₹4,100, Class I: ₹10,100, SuperGrade: ₹50,100)' },
+      { step: 4, title: 'DEI Verification', description: 'Visit the designated DEI office on the scheduled date for physical verification of original documents and instruments' },
+      { step: 5, title: 'Head Office Review', description: 'Verified files are forwarded to the Head Office for final technical scrutiny' },
+      { step: 6, title: 'Board Approval', description: 'The file is submitted to the Board for final clearance and approval' },
+      { step: 7, title: 'Licence Issuance', description: 'On approval, the Electrical Licence is printed and dispatched to the applicant' }
     ],
-    pricing: 'Starting from ₹12,000',
-    timeline: '20-30 working days'
+    pricing: 'Starting from ₹4,100',
+    timeline: '90 working days'
   },
   {
     id: 'msme-registration',

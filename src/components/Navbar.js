@@ -37,16 +37,18 @@ const Navbar = () => {
              <span className="brand-tagline">Consultants & Solutions</span>
           </Link>
 
-          <div className="navbar-top">
-            <a href={`mailto:${content.company.email}`} className="navbar-contact">
-              <Mail size={16} />
-              <span>{content.company.email}</span>
-            </a>
-            <a href={`tel:${content.company.phone}`} className="navbar-contact">
-              <Phone size={16} />
-              <span>{content.company.phone}</span>
-            </a>
-          </div>
+            <div className="navbar-top">
+              <a href={`mailto:${content.company.email}`} className="navbar-contact">
+                <Mail size={16} />
+                <span>{content.company.email}</span>
+              </a>
+              {content.company.phone && (
+                <a href={`tel:${content.company.phone}`} className="navbar-contact">
+                  <Phone size={16} />
+                  <span>{content.company.phone}</span>
+                </a>
+              )}
+            </div>
 
           <div className="navbar-menu">
             {navItems.map((item) => (

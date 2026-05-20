@@ -1,0 +1,133 @@
+.terms-page {
+  padding-top: 80px;
+}
+
+.terms-hero {
+  position: relative;
+  padding: 80px 0 60px;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+  overflow: hidden;
+}
+
+.terms-hero-bg {
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.05' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.terms-hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 820px;
+}
+
+.terms-hero-content h1 {
+  font-size: 2.5rem;
+  color: var(--white);
+  margin-bottom: 16px;
+}
+
+.terms-hero-content p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.0625rem;
+  line-height: 1.7;
+}
+
+.terms-content {
+  background: var(--off-white);
+}
+
+.terms-intro {
+  max-width: 860px;
+  margin: 0 auto 32px;
+  text-align: center;
+}
+
+.terms-intro p {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.terms-sections {
+  display: grid;
+  gap: 20px;
+}
+
+.terms-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  box-shadow: var(--shadow-sm);
+}
+
+.terms-card h2 {
+  font-size: 1.25rem;
+  color: var(--primary);
+  margin-bottom: 14px;
+}
+
+.terms-card ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-left: 18px;
+  list-style: disc;
+}
+
+.terms-card li {
+  color: var(--text-secondary);
+  line-height: 1.65;
+}
+
+@media (max-width: 992px) {
+  .terms-hero {
+    padding: 64px 0 48px;
+  }
+
+  .terms-hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .terms-card {
+    padding: 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  .terms-page {
+    padding-top: 68px;
+  }
+
+  .terms-hero {
+    padding: 48px 0 36px;
+  }
+
+  .terms-hero-content h1 {
+    font-size: 1.75rem;
+    margin-bottom: 12px;
+  }
+
+  .terms-hero-content p,
+  .terms-intro p,
+  .terms-card li {
+    font-size: 0.875rem;
+  }
+
+  .terms-intro {
+    margin-bottom: 24px;
+  }
+
+  .terms-sections {
+    gap: 14px;
+  }
+
+  .terms-card {
+    padding: 18px;
+  }
+
+  .terms-card h2 {
+    font-size: 1.0625rem;
+    margin-bottom: 10px;
+  }
+}

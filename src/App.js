@@ -14,6 +14,7 @@ import Footer from './components/Footer';
 import ServiceDetail from './pages/ServiceDetail';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import TermsAndConditions from './pages/TermsAndConditions';
  
 const Home = () => {
   return (
@@ -47,6 +48,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
         <Route path="/services" element={<Home />} />
         <Route path="/services/:id" element={<ServiceDetail />} />
       </Routes>

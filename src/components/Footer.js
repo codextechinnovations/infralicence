@@ -71,10 +71,12 @@ const Footer = () => {
                   <Mail size={18} />
                   <a href={`mailto:${content.company.email}`}>{content.company.email}</a>
                 </li>
-                <li>
-                  <Phone size={18} />
-                  <a href={`tel:${content.company.phone}`}>{content.company.phone}</a>
-                </li>
+                {content.company.phone && (
+                  <li>
+                    <Phone size={18} />
+                    <a href={`tel:${content.company.phone}`}>{content.company.phone}</a>
+                  </li>
+                )}
                 <li>
                   <MapPin size={18} />
                   <span>{content.company.address}</span>

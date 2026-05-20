@@ -1,0 +1,139 @@
+# InfraLicence Full Reference
+
+Canonical: https://infralicence.in/
+
+## Organization
+
+Name: InfraLicence
+Tagline: Consultants & Solutions
+Email: info@infralicence.in
+Location: Karnataka, India
+Working Hours: 08.00 - 17.00
+
+## What The Site Offers
+
+InfraLicence helps contractors and businesses complete licensing, registration, and compliance tasks related to public works and associated business documentation. The strongest emphasis on the site is KPWD contractor registration and related documentation support.
+
+## Core Services
+
+### KPWD Licence Registration
+
+URL: https://infralicence.in/services/kpwd-licence
+
+Purpose:
+- Main landing page for Karnataka Public Works Department contractor registration support
+- Explains overall registration support and class navigation
+
+KPWD Class Progression:
+- Entry level: Class 4 or Class 3
+- Upgrade path: Class 3 -> Class 2 -> Class 1
+
+### KPWD Class 1 Contractor
+
+URL: https://infralicence.in/services/kpwd-class-1
+
+Highlights:
+- Top-tier contractor category
+- Requires upgrade from Class 2
+- Registration fee shown on site: Rs. 25,000
+
+Document groupings shown on site:
+- Common documents
+- Proprietorship documents
+- Partnership firm documents
+- Private limited company documents
+- BE or diploma holder qualification documents
+
+### KPWD Class 2 Contractor
+
+URL: https://infralicence.in/services/kpwd-class-2
+
+Highlights:
+- Mid-tier contractor category
+- Requires upgrade from Class 3
+- Registration fee shown on site: Rs. 15,000
+
+Document groupings shown on site:
+- Common documents
+- Proprietorship documents
+- Partnership firm documents
+- Private limited company documents
+- BE or diploma holder qualification documents
+
+### KPWD Class 3 Contractor
+
+URL: https://infralicence.in/services/kpwd-class-3
+
+Highlights:
+- Entry-level contractor category
+- Registration fee shown on site: Rs. 9,000
+
+Document groupings shown on site:
+- Common documents
+- Proprietorship documents
+- Partnership firm documents
+- Private limited company documents
+- BE or diploma holder qualification documents
+
+### KPWD Class 4 Contractor
+
+URL: https://infralicence.in/services/kpwd-class-4
+
+Highlights:
+- Entry-level contractor category
+- Registration fee shown on site: Rs. 6,000
+
+Document groupings shown on site:
+- Common documents
+- Proprietorship documents
+- Partnership firm documents
+- Private limited company documents
+- BE or diploma holder qualification documents
+
+### CPWD Contractor Registration
+
+URL: https://infralicence.in/services/cpwd-licence
+
+Purpose:
+- Registration support for Central Public Works Department contractor categories
+
+### Electrical Contractor Licence
+
+URL: https://infralicence.in/services/electrical-licence
+
+Purpose:
+- Karnataka electrical contractor licensing support
+
+## Documentation And Eligibility Support Services
+
+### MSME Registration
+- URL: https://infralicence.in/services/msme-registration
+
+### GST Registration
+- URL: https://infralicence.in/services/gst-registration
+
+### DSC Services
+- URL: https://infralicence.in/services/dsc-services
+
+### GeM Services
+- URL: https://infralicence.in/services/gem-services
+
+## Out Of State Support
+
+### Out-of-State Contractor Support
+
+URL: https://infralicence.in/services/out-of-state
+
+Purpose:
+- Support for contractors from outside Karnataka who need guidance for working within Karnataka-related licensing and compliance flows
+
+## Contact Intent
+
+The site is structured to convert users into enquiries through:
+- Contact page: https://infralicence.in/contact
+- Service detail enquiry buttons
+- WhatsApp contact shortcut
+
+## Suggested Description For Retrieval
+
+InfraLicence is a Karnataka-focused licensing consultancy website that helps users with KPWD contractor registration, CPWD registration, electrical licensing, MSME registration, GST registration, DSC services, and GeM onboarding. It contains individual service pages, KPWD class detail pages, and contact-driven enquiry flows.

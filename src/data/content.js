@@ -3,7 +3,7 @@ export const content = {
     name: 'InfraLicense',
     tagline: 'Consultants & Solutions',
     email: 'info@infralicence.in',
-    phone: '+91-9741821179',
+    phone: '',
     address: 'Karnataka, India',
     workingHours: '08.00 - 17.00'
   },
@@ -184,7 +184,7 @@ export const content = {
     { label: 'About', url: '/about' },
     { label: 'Services', url: '/services' },
     { label: 'Contact', url: '/contact' },
-    { label: 'Disclaimer', url: '/disclaimer' }
+    { label: 'Terms & Conditions', url: '/terms-and-conditions' }
   ],
 
   serviceLinks: [
