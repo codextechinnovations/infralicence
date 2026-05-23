@@ -1,5 +1,60 @@
 export const servicesDetail = [
   {
+    id: 'cpwd-licence',
+    title: 'CPWD Contractor Registration',
+    shortTitle: 'CPWD Registration',
+    icon: 'Building2',
+    hero: {
+      title: 'CPWD Contractor Registration',
+      subtitle: 'Register with Central Public Works Department and access government construction projects across India.',
+      description: 'Our CPWD contractor registration service helps builders, engineers, and construction firms get registered with the Central Public Works Department of India, opening doors to major government projects.',
+      image: null
+    },
+    overview: {
+      title: 'What is CPWD Registration?',
+      content: 'CPWD (Central Public Works Department) registration is required for contractors to bid on central government construction projects. It is a mandatory requirement for working on Central Government projects across India.',
+      points: [
+        'AA Class: Projects above ₹500 Crores',
+        'A Class: Projects above ₹100 Crores',
+        'B Class: Projects above ₹50 Crores',
+        'C Class: Projects above ₹10 Crores',
+        'D Class: Projects above ₹5 Crores'
+      ]
+    },
+    benefits: [
+      'Access to central government projects',
+      'Pan-India project opportunities',
+      'Higher project values',
+      'Professional recognition',
+      'Secure payment through government channels'
+    ],
+    eligibility: [
+      'Registered business entity (Private Ltd/Public Ltd/Partnership)',
+      'Minimum 3 years experience',
+      'Financial turnover as per class',
+      'Technical staff requirements',
+      'Infrastructure capabilities'
+    ],
+    documents: [
+      'Company Registration Certificate',
+      'PAN Card',
+      'GST Registration',
+      'Experience Certificates',
+      'Financial Statements',
+      'Technical Staff Qualifications',
+      'Office Address Proof'
+    ],
+    process: [
+      { step: 1, title: 'Online Registration', description: 'Register on CPWD e-portal' },
+      { step: 2, title: 'Document Upload', description: 'Upload all required documents' },
+      { step: 3, title: 'Fee Payment', description: 'Pay registration and renewal fees' },
+      { step: 4, title: 'Verification', description: 'CPWD verification process' },
+      { step: 5, title: 'Registration Certificate', description: 'Receive your CPWD registration' }
+    ],
+    pricing: 'Starting from ₹25,000',
+    timeline: '30-45 working days'
+  },
+  {
     id: 'kpwd-licence',
     title: 'KPWD Licence Registration',
     shortTitle: 'KPWD Licence',
@@ -268,61 +323,6 @@ export const servicesDetail = [
     timeline: '10-20 working days'
   },
   {
-    id: 'cpwd-licence',
-    title: 'CPWD Contractor Registration',
-    shortTitle: 'CPWD Registration',
-    icon: 'Building2',
-    hero: {
-      title: 'CPWD Contractor Registration',
-      subtitle: 'Register with Central Public Works Department and access government construction projects across India.',
-      description: 'Our CPWD contractor registration service helps builders, engineers, and construction firms get registered with the Central Public Works Department of India, opening doors to major government projects.',
-      image: null
-    },
-    overview: {
-      title: 'What is CPWD Registration?',
-      content: 'CPWD (Central Public Works Department) registration is required for contractors to bid on central government construction projects. It is a mandatory requirement for working on Central Government projects across India.',
-      points: [
-        'AA Class: Projects above ₹500 Crores',
-        'A Class: Projects above ₹100 Crores',
-        'B Class: Projects above ₹50 Crores',
-        'C Class: Projects above ₹10 Crores',
-        'D Class: Projects above ₹5 Crores'
-      ]
-    },
-    benefits: [
-      'Access to central government projects',
-      'Pan-India project opportunities',
-      'Higher project values',
-      'Professional recognition',
-      'Secure payment through government channels'
-    ],
-    eligibility: [
-      'Registered business entity (Private Ltd/Public Ltd/Partnership)',
-      'Minimum 3 years experience',
-      'Financial turnover as per class',
-      'Technical staff requirements',
-      'Infrastructure capabilities'
-    ],
-    documents: [
-      'Company Registration Certificate',
-      'PAN Card',
-      'GST Registration',
-      'Experience Certificates',
-      'Financial Statements',
-      'Technical Staff Qualifications',
-      'Office Address Proof'
-    ],
-    process: [
-      { step: 1, title: 'Online Registration', description: 'Register on CPWD e-portal' },
-      { step: 2, title: 'Document Upload', description: 'Upload all required documents' },
-      { step: 3, title: 'Fee Payment', description: 'Pay registration and renewal fees' },
-      { step: 4, title: 'Verification', description: 'CPWD verification process' },
-      { step: 5, title: 'Registration Certificate', description: 'Receive your CPWD registration' }
-    ],
-    pricing: 'Starting from ₹25,000',
-    timeline: '30-45 working days'
-  },
-  {
     id: 'electrical-licence',
     title: 'Electrical Contractor Licence',
     shortTitle: 'Electrical Licence',
@@ -586,6 +586,117 @@ export const servicesDetail = [
     ],
     pricing: 'Starting from ₹3,000',
     timeline: '5-10 working days'
+  },
+  {
+    id: 'turnover-certificate',
+    title: 'Turnover Certificate Service',
+    shortTitle: 'Turnover Certificate',
+    icon: 'FileText',
+    hero: {
+      title: 'Turnover Certificate Service',
+      subtitle: 'Professional assistance in preparing and obtaining turnover certificates from certified CAs for PWD licensing and tenders.',
+      description: 'Our Turnover Certificate service helps contractors obtain certified turnover statements from qualified CAs, required for PWD contractor licensing, tender eligibility, and project bids.',
+      image: null
+    },
+    overview: {
+      title: 'What is a Turnover Certificate?',
+      content: 'A Turnover Certificate is an official document certified by a Chartered Accountant (CA), verifying the annual turnover of a contractor or business. It is a critical requirement for PWD contractor licensing, tender participation, and project eligibility assessment.',
+      points: [
+        'Essential for PWD licence applications',
+        'Required for tender bid submissions',
+        'Demonstrates financial capacity',
+        'Key document for class upgrades',
+        'Audit-ready certification'
+      ]
+    },
+    benefits: [
+      'Meets PWD licensing requirements',
+      'Strengthens tender bid proposals',
+      'Demonstrates financial track record',
+      'Facilitates class upgrades',
+      'Professional document preparation',
+      'Quick turnaround time',
+      'CA-certified and accepted by all authorities'
+    ],
+    eligibility: [
+      'Contractors applying for PWD licence',
+      'Contractors seeking class upgrades',
+      'Bidders for government tenders',
+      'Businesses requiring turnover proof',
+      'Firms with audited financial statements'
+    ],
+    documents: [
+      'Audited Balance Sheets (3 years)',
+      'Profit & Loss Statements',
+      'IT Returns (3 years)',
+      'GST Returns',
+      'Company Registration Documents',
+      'Bank Statements'
+    ],
+    process: [
+      { step: 1, title: 'Document Collection', description: 'Gather financial documents and statements' },
+      { step: 2, title: 'CA Verification', description: 'CA reviews and verifies financial records' },
+      { step: 3, title: 'Certificate Preparation', description: 'Prepare turnover certificate in PWD format' },
+      { step: 4, title: 'CA Certification', description: 'Certificate signed and stamped by certified CA' },
+      { step: 5, title: 'Delivery', description: 'Receive final CA-certified turnover certificate' }
+    ],
+    pricing: 'Starting from ₹2,000',
+    timeline: '3-7 working days'
+  },
+  {
+    id: 'legal-agreement',
+    title: 'Legal Agreement Services',
+    shortTitle: 'Legal Agreement',
+    icon: 'FileSignature',
+    hero: {
+      title: 'Legal Agreement Services',
+      subtitle: 'Professional assistance in drafting, reviewing, and finalizing legal agreements for licensing and tenders.',
+      description: 'Our Legal Agreement Services help contractors and businesses draft, review, and finalize legally binding agreements required for PWD contractor licensing, tender bids, project contracts, and business partnerships.',
+      image: null
+    },
+    overview: {
+      title: 'What We Offer',
+      content: 'We provide comprehensive legal agreement services covering all types of contracts and agreements needed in the construction and infrastructure sector. Our experts ensure that all agreements are legally sound, compliant with regulations, and protect your interests.',
+      points: [
+        'Licence application agreements',
+        'Tender bid contract review',
+        'Project execution agreements',
+        'Partnership and JV contracts',
+        'Legal compliance assurance'
+      ]
+    },
+    benefits: [
+      'Legally sound agreements',
+      'Protects your business interests',
+      'Compliant with PWD regulations',
+      'Reduces legal risks',
+      'Expert legal review',
+      'Quick turnaround'
+    ],
+    eligibility: [
+      'Contractors applying for PWD licence',
+      'Bidders for government tenders',
+      'Businesses entering project contracts',
+      'Firms requiring partnership agreements',
+      'Any entity needing legal contract support'
+    ],
+    documents: [
+      'Agreement requirements/specifications',
+      'Company registration documents',
+      'GST registration certificate',
+      'PAN card',
+      'Scope of work details',
+      'Any existing draft agreements'
+    ],
+    process: [
+      { step: 1, title: 'Requirement Analysis', description: 'Understand your agreement needs and scope' },
+      { step: 2, title: 'Drafting', description: 'Prepare legally compliant agreement draft' },
+      { step: 3, title: 'Review', description: 'Legal expert reviews for compliance and accuracy' },
+      { step: 4, title: 'Revision', description: 'Incorporate feedback and make revisions' },
+      { step: 5, title: 'Finalization', description: 'Deliver finalized legally binding agreement' }
+    ],
+    pricing: 'Starting from ₹1,500',
+    timeline: '2-5 working days'
   },
   {
     id: 'out-of-state',

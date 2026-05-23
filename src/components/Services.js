@@ -2,13 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import {
-  FileCheck, Building2, Zap, Briefcase, Receipt, Key, ShoppingCart, Globe, ArrowRight, Star
+  FileCheck, Building2, Zap, Briefcase, Receipt, Key, ShoppingCart, Globe, ArrowRight, Star, FileText, FileSignature
 } from 'lucide-react';
 import { content } from '../data/content';
 import './Services.css';
 
 const iconMap = {
-  FileCheck, Building2, Zap, Briefcase, Receipt, Key, ShoppingCart, Globe
+  FileCheck, Building2, Zap, Briefcase, Receipt, Key, ShoppingCart, Globe, FileText, FileSignature
 };
 
 const Services = () => {
@@ -82,7 +82,8 @@ const Services = () => {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-             <h3>Documentation & Eligibility Support</h3>
+            <FileCheck size={20} />
+            <h3>Documentation & Eligibility Support</h3>
           </motion.div>
           <div className="supportive-services-horizontal">
             {supportiveServices.map((service, index) => {
@@ -114,17 +115,80 @@ const Services = () => {
           </div>
         </div>
 
-        <motion.div
-          className="services-cta"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          viewport={{ once: true }}
-        >
-          <Link to="/contact" className="btn btn-primary">
-            View All Services <ArrowRight size={18} />
-          </Link>
-        </motion.div>
+        <div className="services-section">
+          <motion.div
+            className="section-subheader"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+          >
+            <ShoppingCart size={20} />
+            <h3>GEM Services</h3>
+          </motion.div>
+          <div className="core-services-horizontal">
+            <motion.div
+              className="service-card-horizontal"
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+            >
+              <div className="horizontal-card-content">
+                <div className="horizontal-icon">
+                  <ShoppingCart size={32} />
+                </div>
+                <div className="horizontal-text">
+                  <h3 className="service-title">GEM Services</h3>
+                  <p className="service-description">
+                    Government e-Marketplace (GeM) is the Government of India's online portal where government departments buy products and services from registered sellers.
+                  </p>
+                </div>
+              </div>
+              <Link to="/services/gem-services" className="service-link">
+                Learn more <ArrowRight size={16} />
+              </Link>
+            </motion.div>
+          </div>
+        </div>
+
+        <div className="services-section">
+          <motion.div
+            className="section-subheader"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+          >
+            <FileText size={20} />
+            <h3>Tender Bidding Services</h3>
+          </motion.div>
+          <div className="core-services-horizontal">
+            <motion.div
+              className="service-card-horizontal tender"
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+            >
+              <div className="horizontal-card-content">
+                <div className="horizontal-icon tender-icon">
+                  <FileText size={32} />
+                </div>
+                <div className="horizontal-text">
+                  <h3 className="service-title">Tender Bidding Services</h3>
+                  <p className="service-description">
+                    End-to-end tender bidding support including GeM registration, vendor enrolment, bid submission, and post-bid follow-up for government and private tenders.
+                  </p>
+                </div>
+              </div>
+              <Link to="/tender-services" className="service-link">
+                View All Services <ArrowRight size={16} />
+              </Link>
+            </motion.div>
+          </div>
+        </div>
+
       </div>
     </section>
   );

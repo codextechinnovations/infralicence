@@ -4,11 +4,23 @@ import { content } from '../data/content';
 import './Footer.css';
 
 const Footer = () => {
-  const [email, setEmail] = useState('');
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    message: ''
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({ ...prev, [name]: value }));
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setEmail('');
+    console.log('Footer form submitted:', formData);
+    alert('Thank you for contacting us! We will get back to you shortly.');
+    setFormData({ name: '', email: '', phone: '', message: '' });
   };
 
   return (
@@ -84,22 +96,51 @@ const Footer = () => {
               </ul>
             </div>
 
-            <div className="footer-newsletter">
-              <h4>Subscribe for Updates</h4>
-              <p>Subscribe for updates on PWD licensing, projects, and expert tips.</p>
-              <form onSubmit={handleSubmit} className="newsletter-form">
-                <div className="input-wrapper">
-                  <Mail size={18} />
+            <div className="footer-contact-form">
+              <h4>Quick Enquiry</h4>
+              <form onSubmit={handleSubmit}>
+                <div className="footer-form-group">
                   <input
-                    type="email"
-                    placeholder="Enter your email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
+                    type="text"
+                    name="name"
+                    placeholder="Your Name *"
+                    value={formData.name}
+                    onChange={handleChange}
                     required
                   />
                 </div>
-                <button type="submit" className="btn btn-primary">
-                  <Send size={18} />
+                <div className="footer-form-group">
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Your Email *"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
+                <div className="footer-form-group">
+                  <input
+                    type="tel"
+                    name="phone"
+                    placeholder="Your Phone *"
+                    value={formData.phone}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
+                <div className="footer-form-group">
+                  <textarea
+                    name="message"
+                    placeholder="Your Message *"
+                    value={formData.message}
+                    onChange={handleChange}
+                    rows={3}
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" className="btn btn-primary footer-form-btn">
+                  <Send size={16} /> Send Enquiry
                 </button>
               </form>
             </div>

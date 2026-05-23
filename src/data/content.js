@@ -16,17 +16,17 @@ export const content = {
 
   services: [
     {
-      id: 'kpwd-licence',
-      title: 'KPWD Licence Registration',
-      description: 'Comprehensive support for Karnataka PWD contractor licenses across Class 1, 2, 3, and 4 categories, tailored to your experience and financial capacity.',
-      icon: 'FileCheck',
-      type: 'core'
-    },
-    {
       id: 'cpwd-licence',
       title: 'CPWD Contractor Registration',
       description: 'The CPWD Contractor Registration Service helps builders, engineers, and construction firms get registered with the Central Public Works Department (CPWD) of India.',
       icon: 'Building2',
+      type: 'core'
+    },
+    {
+      id: 'kpwd-licence',
+      title: 'KPWD Licence Registration',
+      description: 'Comprehensive support for Karnataka PWD contractor licenses across Class 1, 2, 3, and 4 categories, tailored to your experience and financial capacity.',
+      icon: 'FileCheck',
       type: 'core'
     },
     {
@@ -58,10 +58,17 @@ export const content = {
       type: 'supportive'
     },
     {
-      id: 'gem-services',
-      title: 'GEM Services',
-      description: 'Government e-Marketplace (GeM) is the Government of India\'s online portal where government departments buy products and services from registered sellers.',
-      icon: 'ShoppingCart',
+      id: 'turnover-certificate',
+      title: 'Turnover Certificate Service',
+      description: 'Professional assistance in preparing and obtaining turnover certificates from certified CAs, required for PWD contractor licensing, tenders, and project bids.',
+      icon: 'FileText',
+      type: 'supportive'
+    },
+    {
+      id: 'legal-agreement',
+      title: 'Legal Agreement Services',
+      description: 'Professional assistance in drafting, reviewing, and finalizing legal agreements for contractor licensing, tender bids, and project contracts.',
+      icon: 'FileSignature',
       type: 'supportive'
     },
     {

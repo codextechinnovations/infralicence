@@ -12,6 +12,7 @@ import Process from './components/Process';
 import CTA from './components/CTA';
 import Footer from './components/Footer';
 import ServiceDetail from './pages/ServiceDetail';
+import TenderServices from './pages/TenderServices';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import TermsAndConditions from './pages/TermsAndConditions';
@@ -51,6 +52,7 @@ function App() {
         <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
         <Route path="/services" element={<Home />} />
         <Route path="/services/:id" element={<ServiceDetail />} />
+        <Route path="/tender-services" element={<TenderServices />} />
       </Routes>
       <Footer />
     </Router>

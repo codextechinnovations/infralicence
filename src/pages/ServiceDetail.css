@@ -580,11 +580,6 @@
     font-size: 1.0625rem;
   }
 
-  .class-price {
-    font-size: 1rem;
-    margin-bottom: 16px;
-  }
-
   .benefits-grid,
   .process-steps {
     grid-template-columns: 1fr;
@@ -700,12 +695,5 @@
 .class-card p {
   font-size: 0.875rem;
   color: var(--text-secondary);
-  margin-bottom: 16px;
-}
-
-.class-price {
-  font-size: 1.125rem;
-  font-weight: 700;
-  color: var(--accent);
   margin-bottom: 24px;
 }

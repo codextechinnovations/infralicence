@@ -80,10 +80,10 @@ const ServiceDetail = () => {
             </motion.div>
             <div className="classes-grid">
               {[
-                { id: 'kpwd-class-1', title: 'Class 1', desc: 'Mega projects, High Solvency', price: '₹25,000' },
-                { id: 'kpwd-class-2', title: 'Class 2', desc: 'Medium projects, Mid Solvency', price: '₹15,000' },
-                { id: 'kpwd-class-3', title: 'Class 3', desc: 'Small projects, Low Solvency', price: '₹9,000' },
-                { id: 'kpwd-class-4', title: 'Class 4', desc: 'Entry level, Minimal Solvency', price: '₹6,000' },
+                { id: 'kpwd-class-1', title: 'Class 1', desc: 'Mega projects, High Solvency' },
+                { id: 'kpwd-class-2', title: 'Class 2', desc: 'Medium projects, Mid Solvency' },
+                { id: 'kpwd-class-3', title: 'Class 3', desc: 'Small projects, Low Solvency' },
+                { id: 'kpwd-class-4', title: 'Class 4', desc: 'Entry level, Minimal Solvency' },
               ].map((cls, index) => (
                 <motion.div 
                   key={cls.id}
@@ -95,7 +95,6 @@ const ServiceDetail = () => {
                 >
                   <h3>{cls.title}</h3>
                   <p>{cls.desc}</p>
-                  <div className="class-price">{cls.price}</div>
                   <Link to={`/services/${cls.id}`} className="btn btn-outline full-width">
                     View Details <ChevronRight size={16} />
                   </Link>

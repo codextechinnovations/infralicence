@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import { useSearchParams } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { Phone, Mail, MapPin, Clock, Send, MessageSquare, ArrowRight } from 'lucide-react';
 import { content } from '../data/content';
@@ -7,11 +8,13 @@ import { servicesDetail } from '../data/servicesData';
 import './Contact.css';
  
 const Contact = () => {
+  const [searchParams] = useSearchParams();
+  const initialService = searchParams.get('service') || '';
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     phone: '',
-    service: '',
+    service: initialService,
     message: ''
   });
 
@@ -215,6 +218,13 @@ const Contact = () => {
                         {service.title}
                       </option>
                     ))}
+                    <option disabled>── Tender Services ──</option>
+                    <option value="tender-information">Tender Information</option>
+                    <option value="tender-bidding-solution">Tender Bidding Solution</option>
+                    <option value="gem-complete-registration">GeM Complete Registration</option>
+                    <option value="online-vendor-registration">Online Vendor Registration</option>
+                    <option value="tender-awarded-results">Tender Awarded Results</option>
+                    <option value="pre-post-bid-followup">Pre / Post-Bid Follow-up</option>
                   </select>
                 </div>
 
