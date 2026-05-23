@@ -27,6 +27,17 @@ const Home = () => {
       <Helmet>
         <title>InfraLicence | Consultants & Solutions - PWD Licensing Experts</title>
         <meta name="description" content="Expert PWD licensing, contractor registration, and infrastructure compliance services in Karnataka, India. We simplify the process for Class 1, 2, 3, and 4 contractors." />
+        <meta property="og:title" content="InfraLicence | Consultants & Solutions - PWD Licensing Experts" />
+        <meta property="og:description" content="Expert PWD licensing, contractor registration, and infrastructure compliance services in Karnataka, India. We simplify the process for Class 1, 2, 3, and 4 contractors." />
+        <meta property="og:url" content="https://infralicence.in/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://infralicence.in/logo512.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://infralicence.in/" />
+        <meta name="twitter:title" content="InfraLicence | Consultants & Solutions - PWD Licensing Experts" />
+        <meta name="twitter:description" content="Expert PWD licensing, contractor registration, and infrastructure compliance services in Karnataka, India." />
+        <meta name="twitter:image" content="https://infralicence.in/logo512.png" />
+        <link rel="canonical" href="https://infralicence.in/" />
       </Helmet>
       <main>
         <Hero />
@@ -43,6 +54,36 @@ const Home = () => {
 function App() {
   return (
     <Router>
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "Organization",
+                "@id": "https://infralicence.in/#organization",
+                "name": "InfraLicence",
+                "url": "https://infralicence.in/",
+                "description": "Expert PWD licensing, contractor registration, and infrastructure compliance services in Karnataka, India.",
+                "email": "info@infralicence.in",
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressLocality": "Karnataka",
+                  "addressCountry": "IN"
+                }
+              },
+              {
+                "@type": "WebSite",
+                "@id": "https://infralicence.in/#website",
+                "url": "https://infralicence.in/",
+                "name": "InfraLicence | Consultants & Solutions",
+                "description": "Expert PWD licensing, contractor registration, and infrastructure compliance services in Karnataka, India.",
+                "publisher": { "@id": "https://infralicence.in/#organization" }
+              }
+            ]
+          })}
+        </script>
+      </Helmet>
       <Navbar />
       <WhatsAppButton />
       <Routes>

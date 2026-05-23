@@ -70,13 +70,21 @@ const sections = [
 
 const TermsAndConditions = () => {
   return (
-    <div className="terms-page">
+    <main className="terms-page">
       <Helmet>
         <title>Terms & Conditions | InfraLicence</title>
-        <meta
-          name="description"
-          content="Read the Terms & Conditions for InfraLicence consultancy services, including our non-government status and approval disclaimer."
-        />
+        <meta name="description" content="Read the Terms & Conditions for InfraLicence consultancy services, including our non-government status and approval disclaimer." />
+        <meta property="og:title" content="Terms & Conditions | InfraLicence" />
+        <meta property="og:description" content="Read the Terms & Conditions for InfraLicence consultancy services, including our non-government status and approval disclaimer." />
+        <meta property="og:url" content="https://infralicence.in/terms-and-conditions" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://infralicence.in/logo512.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://infralicence.in/terms-and-conditions" />
+        <meta name="twitter:title" content="Terms & Conditions | InfraLicence" />
+        <meta name="twitter:description" content="Read the Terms & Conditions for InfraLicence consultancy services." />
+        <meta name="twitter:image" content="https://infralicence.in/logo512.png" />
+        <link rel="canonical" href="https://infralicence.in/terms-and-conditions" />
       </Helmet>
 
       <section className="terms-hero">
@@ -132,7 +140,7 @@ const TermsAndConditions = () => {
           </div>
         </div>
       </section>
-    </div>
+    </main>
   );
 };
 

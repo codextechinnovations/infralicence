@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { Helmet } from 'react-helmet-async';
 import { ArrowLeft, CheckCircle, Clock, DollarSign, FileText, ChevronRight, Globe } from 'lucide-react';
 import { servicesDetail } from '../data/servicesData';
 import './ServiceDetail.css';
@@ -30,7 +31,22 @@ const ServiceDetail = () => {
   }
 
   return (
-    <div className="service-detail-page">
+    <main className="service-detail-page">
+      <Helmet>
+        <title>{service.title} | InfraLicence</title>
+        <meta name="description" content={service.hero.subtitle} />
+        <meta property="og:title" content={`${service.title} | InfraLicence`} />
+        <meta property="og:description" content={service.hero.subtitle} />
+        <meta property="og:url" content={`https://infralicence.in/services/${service.id}`} />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://infralicence.in/logo512.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content={`https://infralicence.in/services/${service.id}`} />
+        <meta name="twitter:title" content={`${service.title} | InfraLicence`} />
+        <meta name="twitter:description" content={service.hero.subtitle} />
+        <meta name="twitter:image" content="https://infralicence.in/logo512.png" />
+        <link rel="canonical" href={`https://infralicence.in/services/${service.id}`} />
+      </Helmet>
       <section className="service-hero">
         <div className="service-hero-bg"></div>
         <div className="container">
@@ -311,7 +327,7 @@ const ServiceDetail = () => {
           </motion.div>
         </div>
       </section>
-    </div>
+    </main>
   );
 };
 

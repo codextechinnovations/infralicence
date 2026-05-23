@@ -31,10 +31,21 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact-page">
+    <main className="contact-page">
       <Helmet>
         <title>Contact Us | InfraLicence - PWD Licensing Experts</title>
         <meta name="description" content="Get in touch with InfraLicence for expert guidance on PWD licensing, contractor registration, and infrastructure compliance. Free consultation available." />
+        <meta property="og:title" content="Contact Us | InfraLicence - PWD Licensing Experts" />
+        <meta property="og:description" content="Get in touch with InfraLicence for expert guidance on PWD licensing, contractor registration, and infrastructure compliance. Free consultation available." />
+        <meta property="og:url" content="https://infralicence.in/contact" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://infralicence.in/logo512.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://infralicence.in/contact" />
+        <meta name="twitter:title" content="Contact Us | InfraLicence - PWD Licensing Experts" />
+        <meta name="twitter:description" content="Get in touch with InfraLicence for expert guidance on PWD licensing and contractor registration." />
+        <meta name="twitter:image" content="https://infralicence.in/logo512.png" />
+        <link rel="canonical" href="https://infralicence.in/contact" />
       </Helmet>
       <section className="contact-hero">
         <div className="contact-hero-bg"></div>
@@ -280,7 +291,7 @@ const Contact = () => {
           </div>
         </div>
       </section>
-    </div>
+    </main>
   );
 };
 

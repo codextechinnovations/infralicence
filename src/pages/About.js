@@ -50,10 +50,21 @@ const About = () => {
   ];
 
   return (
-    <div className="about-page">
+    <main className="about-page">
       <Helmet>
         <title>About Us | InfraLicence - PWD Licensing Experts</title>
         <meta name="description" content="Learn more about InfraLicence, your trusted partner for PWD licensing and infrastructure compliance in Karnataka. Expert consultancy with a proven track record." />
+        <meta property="og:title" content="About Us | InfraLicence - PWD Licensing Experts" />
+        <meta property="og:description" content="Learn more about InfraLicence, your trusted partner for PWD licensing and infrastructure compliance in Karnataka. Expert consultancy with a proven track record." />
+        <meta property="og:url" content="https://infralicence.in/about" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://infralicence.in/logo512.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://infralicence.in/about" />
+        <meta name="twitter:title" content="About Us | InfraLicence - PWD Licensing Experts" />
+        <meta name="twitter:description" content="Learn more about InfraLicence, your trusted partner for PWD licensing and infrastructure compliance in Karnataka." />
+        <meta name="twitter:image" content="https://infralicence.in/logo512.png" />
+        <link rel="canonical" href="https://infralicence.in/about" />
       </Helmet>
       <section className="about-hero">
         <div className="about-hero-bg"></div>
@@ -270,7 +281,7 @@ const About = () => {
           </div>
         </div>
       </section>
-    </div>
+    </main>
   );
 };
 

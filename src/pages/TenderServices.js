@@ -91,10 +91,21 @@ const tenderServices = [
 
 const TenderServices = () => {
   return (
-    <div className="tender-services-page">
+    <main className="tender-services-page">
       <Helmet>
         <title>Tender Bidding Services | InfraLicence</title>
         <meta name="description" content="End-to-end tender bidding support including GeM registration, vendor enrolment, bid submission, and post-bid follow-up for government and private tenders." />
+        <meta property="og:title" content="Tender Bidding Services | InfraLicence" />
+        <meta property="og:description" content="End-to-end tender bidding support including GeM registration, vendor enrolment, bid submission, and post-bid follow-up for government and private tenders." />
+        <meta property="og:url" content="https://infralicence.in/tender-services" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://infralicence.in/logo512.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://infralicence.in/tender-services" />
+        <meta name="twitter:title" content="Tender Bidding Services | InfraLicence" />
+        <meta name="twitter:description" content="End-to-end tender bidding support including GeM registration, vendor enrolment, bid submission, and post-bid follow-up." />
+        <meta name="twitter:image" content="https://infralicence.in/logo512.png" />
+        <link rel="canonical" href="https://infralicence.in/tender-services" />
       </Helmet>
 
       <section className="tender-hero">
@@ -207,7 +218,7 @@ const TenderServices = () => {
           </motion.div>
         </div>
       </section>
-    </div>
+    </main>
   );
 };
 
