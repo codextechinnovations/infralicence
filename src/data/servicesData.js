@@ -593,16 +593,16 @@ export const servicesDetail = [
     shortTitle: 'Turnover Certificate',
     icon: 'FileText',
     hero: {
-      title: 'Turnover Certificate Service',
-      subtitle: 'Professional assistance in preparing and obtaining turnover certificates from certified CAs for PWD licensing and tenders.',
-      description: 'Our Turnover Certificate service helps contractors obtain certified turnover statements from qualified CAs, required for PWD contractor licensing, tender eligibility, and project bids.',
+    title: 'Turnover Certificate',
+      subtitle: 'Professional assistance in preparing and obtaining turnover certificates from certified CAs for licensing and tenders.',
+      description: 'Our Turnover Certificate helps contractors obtain certified turnover statements from qualified CAs, required for contractor licensing, tender eligibility, and project bids.',
       image: null
     },
     overview: {
       title: 'What is a Turnover Certificate?',
-      content: 'A Turnover Certificate is an official document certified by a Chartered Accountant (CA), verifying the annual turnover of a contractor or business. It is a critical requirement for PWD contractor licensing, tender participation, and project eligibility assessment.',
+      content: 'A Turnover Certificate is an official document certified by a Chartered Accountant (CA), verifying the annual turnover of a contractor or business. It is a critical requirement for contractor licensing, tender participation, and project eligibility assessment.',
       points: [
-        'Essential for PWD licence applications',
+        'Essential for licence applications',
         'Required for tender bid submissions',
         'Demonstrates financial capacity',
         'Key document for class upgrades',
@@ -610,7 +610,7 @@ export const servicesDetail = [
       ]
     },
     benefits: [
-      'Meets PWD licensing requirements',
+      'Meets licensing requirements',
       'Strengthens tender bid proposals',
       'Demonstrates financial track record',
       'Facilitates class upgrades',
@@ -619,7 +619,7 @@ export const servicesDetail = [
       'CA-certified and accepted by all authorities'
     ],
     eligibility: [
-      'Contractors applying for PWD licence',
+      'Contractors applying for licence',
       'Contractors seeking class upgrades',
       'Bidders for government tenders',
       'Businesses requiring turnover proof',
@@ -636,7 +636,7 @@ export const servicesDetail = [
     process: [
       { step: 1, title: 'Document Collection', description: 'Gather financial documents and statements' },
       { step: 2, title: 'CA Verification', description: 'CA reviews and verifies financial records' },
-      { step: 3, title: 'Certificate Preparation', description: 'Prepare turnover certificate in PWD format' },
+      { step: 3, title: 'Certificate Preparation', description: 'Prepare turnover certificate in standard format' },
       { step: 4, title: 'CA Certification', description: 'Certificate signed and stamped by certified CA' },
       { step: 5, title: 'Delivery', description: 'Receive final CA-certified turnover certificate' }
     ],
@@ -645,13 +645,13 @@ export const servicesDetail = [
   },
   {
     id: 'legal-agreement',
-    title: 'Legal Agreement Services',
+    title: 'Legal Agreement',
     shortTitle: 'Legal Agreement',
     icon: 'FileSignature',
     hero: {
-      title: 'Legal Agreement Services',
+      title: 'Legal Agreement',
       subtitle: 'Professional assistance in drafting, reviewing, and finalizing legal agreements for licensing and tenders.',
-      description: 'Our Legal Agreement Services help contractors and businesses draft, review, and finalize legally binding agreements required for PWD contractor licensing, tender bids, project contracts, and business partnerships.',
+      description: 'Our Legal Agreement help contractors and businesses draft, review, and finalize legally binding agreements required for contractor licensing, tender bids, project contracts, and business partnerships.',
       image: null
     },
     overview: {

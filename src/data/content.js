@@ -59,14 +59,14 @@ export const content = {
     },
     {
       id: 'turnover-certificate',
-      title: 'Turnover Certificate Service',
-      description: 'Professional assistance in preparing and obtaining turnover certificates from certified CAs, required for PWD contractor licensing, tenders, and project bids.',
+      title: 'Turnover Certificate',
+      description: 'Professional assistance in preparing and obtaining turnover certificates from certified CAs, required for contractor licensing, tenders, and project bids.',
       icon: 'FileText',
       type: 'supportive'
     },
     {
       id: 'legal-agreement',
-      title: 'Legal Agreement Services',
+      title: 'Legal Agreement',
       description: 'Professional assistance in drafting, reviewing, and finalizing legal agreements for contractor licensing, tender bids, and project contracts.',
       icon: 'FileSignature',
       type: 'supportive'
