@@ -1,0 +1,39 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="modernGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1C2A45;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2D4263;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00D9FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0099CC;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background with rounded corners -->
+  <rect width="512" height="512" rx="100" fill="url(#modernGrad)"/>
+  
+  <!-- Stylized "IL" monogram with geometric design -->
+  <g>
+    <!-- Letter "I" as a building/pillar -->
+    <rect x="150" y="140" width="70" height="280" rx="8" fill="#ffffff"/>
+    <rect x="150" y="140" width="70" height="40" rx="8" fill="url(#accentGrad)"/>
+    
+    <!-- Letter "L" as infrastructure element -->
+    <path d="M 270 140 L 340 140 L 340 180 L 310 180 L 310 380 L 420 380 L 420 420 L 270 420 Z" 
+          fill="#ffffff" stroke="none"/>
+    
+    <!-- Accent geometric elements -->
+    <rect x="270" y="140" width="70" height="40" rx="8" fill="url(#accentGrad)"/>
+    <rect x="310" y="380" width="110" height="40" rx="8" fill="url(#accentGrad)"/>
+    
+    <!-- Modern grid/license pattern overlay -->
+    <g opacity="0.15">
+      <line x1="160" y1="200" x2="210" y2="200" stroke="#00D9FF" stroke-width="3"/>
+      <line x1="160" y1="240" x2="210" y2="240" stroke="#00D9FF" stroke-width="3"/>
+      <line x1="160" y1="280" x2="210" y2="280" stroke="#00D9FF" stroke-width="3"/>
+      <line x1="160" y1="320" x2="210" y2="320" stroke="#00D9FF" stroke-width="3"/>
+      <line x1="160" y1="360" x2="210" y2="360" stroke="#00D9FF" stroke-width="3"/>
+    </g>
+  </g>
+</svg>
