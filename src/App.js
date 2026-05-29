@@ -8,6 +8,7 @@ import Hero from './components/Hero';
 import Stats from './components/Stats';
 import Services from './components/Services';
 import Features from './components/Features';
+import Testimonials from './components/Testimonials';
 import Process from './components/Process';
 import FAQ from './components/FAQ';
 import CTA from './components/CTA';
@@ -17,6 +18,7 @@ import TenderServices from './pages/TenderServices';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import TermsAndConditions from './pages/TermsAndConditions';
+import NotFound from './pages/NotFound';
  
 const Home = () => {
   return (
@@ -101,6 +103,7 @@ const Home = () => {
         <Stats />
         <Services />
         <Features />
+        <Testimonials />
         <Process />
         <FAQ />
         <CTA />
@@ -177,6 +180,7 @@ function App() {
         <Route path="/services" element={<Home />} />
         <Route path="/services/:id" element={<ServiceDetail />} />
         <Route path="/tender-services" element={<TenderServices />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </Router>
