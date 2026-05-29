@@ -70,7 +70,7 @@ const Footer = () => {
                  <span className="brand-tagline">Consultants & Solutions</span>
               </a>
               <p className="footer-description">
-                InfraLicense Consultants & Solutions is a reliable consultancy dedicated to helping
+                InfraLicence Consultants & Solutions is a reliable consultancy dedicated to helping
                 clients obtain PWD contractor licenses and Electrical contractor licenses, while
                 offering complete guidance and support throughout the licensing process.
               </p>
@@ -194,7 +194,7 @@ const Footer = () => {
       <div className="footer-bottom">
         <div className="container">
           <div className="footer-bottom-content">
-            <p>&copy; 2025 InfraLicense Consultants & Solutions. All rights reserved.</p>
+            <p>&copy; 2025 InfraLicence Consultants & Solutions. All rights reserved.</p>
             <p>Powered by CodeX Tech Innovations & Consultants LLP</p>
           </div>
         </div>

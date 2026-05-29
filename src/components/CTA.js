@@ -25,7 +25,7 @@ const CTA = () => {
           </p>
 
           <div className="cta-actions">
-            <a href="#contact" className="btn btn-primary">
+            <a href="/contact" className="btn btn-primary">
               Discover more
               <ArrowRight size={18} />
             </a>

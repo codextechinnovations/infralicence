@@ -17,7 +17,6 @@ const NotFound = () => {
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://infralicence.in/logo512.png" />
         <meta name="robots" content="noindex" />
-        <link rel="canonical" href="https://infralicence.in/" />
       </Helmet>
       <div className="container">
         <motion.div

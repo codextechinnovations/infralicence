@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
+import ScrollToTop from './components/ScrollToTop';
 import Navbar from './components/Navbar';
 import WhatsAppButton from './components/WhatsAppButton';
 import Hero from './components/Hero';
@@ -170,6 +171,7 @@ function App() {
           })}
         </script>
       </Helmet>
+      <ScrollToTop />
       <Navbar />
       <WhatsAppButton />
       <Routes>

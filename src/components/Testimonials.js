@@ -32,7 +32,7 @@ const Testimonials = () => {
         </motion.div>
 
         <div className="testimonials-carousel">
-          <button className="carousel-btn prev" onClick={prevSlide}>
+          <button className="carousel-btn prev" onClick={prevSlide} aria-label="Previous testimonial">
             <ChevronLeft size={24} />
           </button>
 
@@ -65,7 +65,7 @@ const Testimonials = () => {
             </AnimatePresence>
           </div>
 
-          <button className="carousel-btn next" onClick={nextSlide}>
+          <button className="carousel-btn next" onClick={nextSlide} aria-label="Next testimonial">
             <ChevronRight size={24} />
           </button>
         </div>
@@ -76,6 +76,7 @@ const Testimonials = () => {
               key={index}
               className={`dot ${index === currentIndex ? 'active' : ''}`}
               onClick={() => setCurrentIndex(index)}
+              aria-label={`Go to testimonial ${index + 1}`}
             />
           ))}
         </div>

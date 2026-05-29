@@ -90,6 +90,7 @@ const Navbar = () => {
           <button
             className="mobile-menu-btn"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label={isMobileMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -107,7 +108,7 @@ const Navbar = () => {
           >
             <div className="mobile-menu-header">
               <span className="brand-text">InfraLicence</span>
-              <button onClick={() => setIsMobileMenuOpen(false)}>
+              <button onClick={() => setIsMobileMenuOpen(false)} aria-label="Close navigation menu">
                 <X size={24} />
               </button>
             </div>

@@ -42,6 +42,7 @@ const FAQ = () => {
                 className="faq-question"
                 onClick={() => toggleFAQ(index)}
                 aria-expanded={openIndex === index}
+                aria-controls={`faq-answer-${index}`}
               >
                 <span className="faq-question-icon">
                   <HelpCircle size={20} />
@@ -53,6 +54,7 @@ const FAQ = () => {
                 />
               </button>
               <div
+                id={`faq-answer-${index}`}
                 className="faq-answer"
                 style={{
                   maxHeight: openIndex === index ? '300px' : '0',

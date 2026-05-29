@@ -75,7 +75,7 @@ const About = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <span className="section-label">About InfraLicense</span>
+            <span className="section-label">About InfraLicence</span>
             <h1>Your Trusted Partner for PWD Licensing & Infrastructure Solutions</h1>
             <p>
               We are a dedicated consultancy helping businesses and contractors navigate PWD licensing
@@ -119,7 +119,7 @@ const About = () => {
               <span className="section-label">Our Story</span>
               <h2>Building Trust Since 2015</h2>
               <p>
-                InfraLicense Consultants & Solutions was founded with a vision to simplify the complex
+                InfraLicence Consultants & Solutions was founded with a vision to simplify the complex
                 world of PWD licensing and government approvals. Over the years, we have grown to become
                 a leading name in infrastructure licensing consultancy.
               </p>

@@ -1,6 +1,6 @@
 export const content = {
   company: {
-    name: 'InfraLicense',
+    name: 'InfraLicence',
     tagline: 'Consultants & Solutions',
     email: 'info@infralicence.in',
     phone: '',
