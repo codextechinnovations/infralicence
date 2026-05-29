@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, CheckCircle, AlertCircle, Loader2 } from 'lucide-react';
 import { content } from '../data/content';
+import { submitEnquiry } from '../services/api';
 import './Footer.css';
 
 const socialIcons = {
@@ -35,17 +36,27 @@ const Footer = () => {
     phone: '',
     message: ''
   });
+  const [status, setStatus] = useState({ type: '', message: '' });
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Footer form submitted:', formData);
-    alert('Thank you for contacting us! We will get back to you shortly.');
-    setFormData({ name: '', email: '', phone: '', message: '' });
+    setLoading(true);
+    setStatus({ type: '', message: '' });
+    try {
+      await submitEnquiry({ ...formData, source: 'footer' });
+      setStatus({ type: 'success', message: 'Thank you! We will get back to you shortly.' });
+      setFormData({ name: '', email: '', phone: '', message: '' });
+    } catch (err) {
+      setStatus({ type: 'error', message: 'Something went wrong. Please try again or email us directly.' });
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -164,8 +175,15 @@ const Footer = () => {
                     required
                   ></textarea>
                 </div>
-                <button type="submit" className="btn btn-primary footer-form-btn">
-                  <Send size={16} /> Send Enquiry
+                {status.message && (
+                  <div className={`footer-form-status ${status.type}`}>
+                    {status.type === 'success' ? <CheckCircle size={16} /> : <AlertCircle size={16} />}
+                    <span>{status.message}</span>
+                  </div>
+                )}
+                <button type="submit" className="btn btn-primary footer-form-btn" disabled={loading}>
+                  {loading ? <Loader2 size={16} className="spin" /> : <Send size={16} />}
+                  {loading ? 'Sending...' : 'Send Enquiry'}
                 </button>
               </form>
             </div>

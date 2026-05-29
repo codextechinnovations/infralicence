@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useSearchParams } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { Phone, Mail, MapPin, Clock, Send, MessageSquare, ArrowRight } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, Send, MessageSquare, CheckCircle, AlertCircle, Loader2 } from 'lucide-react';
 import { content } from '../data/content';
 import { servicesDetail } from '../data/servicesData';
+import { submitEnquiry } from '../services/api';
 import './Contact.css';
  
 const Contact = () => {
@@ -17,17 +18,27 @@ const Contact = () => {
     service: initialService,
     message: ''
   });
+  const [status, setStatus] = useState({ type: '', message: '' });
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    alert('Thank you for contacting us! We will get back to you shortly.');
-    setFormData({ name: '', email: '', phone: '', service: '', message: '' });
+    setLoading(true);
+    setStatus({ type: '', message: '' });
+    try {
+      await submitEnquiry({ ...formData, source: 'contact' });
+      setStatus({ type: 'success', message: 'Thank you! We will get back to you within 24 hours.' });
+      setFormData({ name: '', email: '', phone: '', service: '', message: '' });
+    } catch (err) {
+      setStatus({ type: 'error', message: 'Something went wrong. Please try again or email us directly.' });
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -252,8 +263,15 @@ const Contact = () => {
                   ></textarea>
                 </div>
 
-                <button type="submit" className="btn btn-primary full-width">
-                  Send Message <ArrowRight size={18} />
+                {status.message && (
+                  <div className={`form-status ${status.type}`}>
+                    {status.type === 'success' ? <CheckCircle size={18} /> : <AlertCircle size={18} />}
+                    <span>{status.message}</span>
+                  </div>
+                )}
+                <button type="submit" className="btn btn-primary full-width" disabled={loading}>
+                  {loading ? <Loader2 size={18} className="spin" /> : <Send size={18} />}
+                  {loading ? 'Sending...' : 'Send Message'}
                 </button>
               </form>
             </motion.div>
