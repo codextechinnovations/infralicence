@@ -202,9 +202,9 @@ export const content = {
   ],
 
   socialLinks: [
-    { label: 'Facebook', url: '#', icon: 'Circle' },
-    { label: 'Instagram', url: 'https://www.instagram.com/infralicence/', icon: 'Circle' },
-    { label: 'Twitter', url: 'https://x.com/infralicence', icon: 'Circle' },
-    { label: 'YouTube', url: 'https://www.youtube.com/@Infralicence', icon: 'Circle' }
+    { label: 'Facebook', url: '#', icon: 'facebook' },
+    { label: 'Instagram', url: 'https://www.instagram.com/infralicence/', icon: 'instagram' },
+    { label: 'Twitter', url: 'https://x.com/infralicence', icon: 'twitter' },
+    { label: 'YouTube', url: 'https://www.youtube.com/@Infralicence', icon: 'youtube' }
   ]
 };

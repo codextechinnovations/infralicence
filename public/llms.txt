@@ -6,8 +6,8 @@ Canonical: https://infralicence.in/
 
 ## Summary
 
-- Primary focus: KPWD contractor registration and licensing support
-- Secondary services: CPWD registration, electrical licence, MSME, GST, DSC, GeM
+- Primary focus: CPWD and KPWD contractor registration and licensing support
+- Secondary services: electrical licence, MSME, GST, DSC, GeM, turnover certificate, legal agreement
 - Audience: contractors, civil engineers, firms, LLPs, and private limited companies
 - Geography: Karnataka, India
 
@@ -17,20 +17,39 @@ Canonical: https://infralicence.in/
 - About: https://infralicence.in/about
 - Contact: https://infralicence.in/contact
 - Services: https://infralicence.in/services
+- Tender Services: https://infralicence.in/tender-services
 
-## Key Services
+## Core Services
 
-- KPWD Contractor Registration: https://infralicence.in/services/kpwd-licence
+- CPWD Contractor Registration: https://infralicence.in/services/cpwd-licence
+- KPWD Licence Registration: https://infralicence.in/services/kpwd-licence
 - KPWD Class 1: https://infralicence.in/services/kpwd-class-1
 - KPWD Class 2: https://infralicence.in/services/kpwd-class-2
 - KPWD Class 3: https://infralicence.in/services/kpwd-class-3
 - KPWD Class 4: https://infralicence.in/services/kpwd-class-4
-- CPWD Contractor Registration: https://infralicence.in/services/cpwd-licence
 - Electrical Contractor Licence: https://infralicence.in/services/electrical-licence
+
+## Tender Bidding Services
+
+- Tender Information: https://infralicence.in/tender-services
+- Tender Bidding Solution: https://infralicence.in/tender-services
+- GeM Complete Registration: https://infralicence.in/tender-services
+- Online Vendor Registration: https://infralicence.in/tender-services
+- Tender Awarded Results: https://infralicence.in/tender-services
+- Pre / Post-Bid Follow-up: https://infralicence.in/tender-services
+
+## GEM Services
+
+- GeM Services: https://infralicence.in/services/gem-services
+
+## Documentation & Eligibility Support
+
 - MSME Registration: https://infralicence.in/services/msme-registration
 - GST Registration: https://infralicence.in/services/gst-registration
 - DSC Services: https://infralicence.in/services/dsc-services
-- GeM Services: https://infralicence.in/services/gem-services
+- Turnover Certificate: https://infralicence.in/services/turnover-certificate
+- Legal Agreement: https://infralicence.in/services/legal-agreement
+- Out-of-State Contractor Support: https://infralicence.in/services/out-of-state
 
 ## Contact
  

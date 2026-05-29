@@ -4,7 +4,7 @@ Canonical: https://infralicence.in/
 
 ## Organization
 
-Name: InfraLicence
+Name: InfraLicence Consultants & Solutions
 Tagline: Consultants & Solutions
 Email: info@infralicence.in
 Location: Karnataka, India
@@ -12,9 +12,27 @@ Working Hours: 08.00 - 17.00
 
 ## What The Site Offers
 
-InfraLicence helps contractors and businesses complete licensing, registration, and compliance tasks related to public works and associated business documentation. The strongest emphasis on the site is KPWD contractor registration and related documentation support.
+InfraLicence helps contractors and businesses complete licensing, registration, and compliance tasks related to public works and associated business documentation. The site covers CPWD contractor registration, KPWD contractor licensing (Classes 1-4), electrical contractor licensing, tender bidding services, GeM registration, MSME registration, GST registration, DSC services, turnover certificates, legal agreements, and out-of-state contractor support.
 
 ## Core Services
+
+### CPWD Contractor Registration
+
+URL: https://infralicence.in/services/cpwd-licence
+
+Purpose:
+- Registration support for Central Public Works Department contractor categories
+- Enables bidding on central government construction projects across India
+
+Classes:
+- AA Class: Projects above ₹500 Crores
+- A Class: Projects above ₹100 Crores
+- B Class: Projects above ₹50 Crores
+- C Class: Projects above ₹10 Crores
+- D Class: Projects above ₹5 Crores
+
+Pricing: Starting from ₹25,000
+Timeline: 30-45 working days
 
 ### KPWD Licence Registration
 
@@ -35,13 +53,12 @@ URL: https://infralicence.in/services/kpwd-class-1
 Highlights:
 - Top-tier contractor category
 - Requires upgrade from Class 2
-- Registration fee shown on site: Rs. 25,000
+- Registration fee: ₹25,000
 
-Document groupings shown on site:
-- Common documents
-- Proprietorship documents
-- Partnership firm documents
-- Private limited company documents
+Document groupings:
+- Common documents (Aadhaar, PAN, Address Proof, IT Returns, CA Certificate)
+- Bank Solvency (₹25L+) & Work Completion (Total ₹75L+)
+- Proprietorship / Partnership / Private Ltd specific documents
 - BE or diploma holder qualification documents
 
 ### KPWD Class 2 Contractor
@@ -51,14 +68,7 @@ URL: https://infralicence.in/services/kpwd-class-2
 Highlights:
 - Mid-tier contractor category
 - Requires upgrade from Class 3
-- Registration fee shown on site: Rs. 15,000
-
-Document groupings shown on site:
-- Common documents
-- Proprietorship documents
-- Partnership firm documents
-- Private limited company documents
-- BE or diploma holder qualification documents
+- Registration fee: ₹15,000
 
 ### KPWD Class 3 Contractor
 
@@ -66,14 +76,7 @@ URL: https://infralicence.in/services/kpwd-class-3
 
 Highlights:
 - Entry-level contractor category
-- Registration fee shown on site: Rs. 9,000
-
-Document groupings shown on site:
-- Common documents
-- Proprietorship documents
-- Partnership firm documents
-- Private limited company documents
-- BE or diploma holder qualification documents
+- Registration fee: ₹9,000
 
 ### KPWD Class 4 Contractor
 
@@ -81,21 +84,7 @@ URL: https://infralicence.in/services/kpwd-class-4
 
 Highlights:
 - Entry-level contractor category
-- Registration fee shown on site: Rs. 6,000
-
-Document groupings shown on site:
-- Common documents
-- Proprietorship documents
-- Partnership firm documents
-- Private limited company documents
-- BE or diploma holder qualification documents
-
-### CPWD Contractor Registration
-
-URL: https://infralicence.in/services/cpwd-licence
-
-Purpose:
-- Registration support for Central Public Works Department contractor categories
+- Registration fee: ₹6,000
 
 ### Electrical Contractor Licence
 
@@ -103,29 +92,101 @@ URL: https://infralicence.in/services/electrical-licence
 
 Purpose:
 - Karnataka electrical contractor licensing support
+- Classes: SuperGrade, Class I, Class II
+- Issued by Electrical Inspectorate, Government of Karnataka
 
-## Documentation And Eligibility Support Services
+Pricing: Starting from ₹4,100
+Timeline: 90 working days
 
-### MSME Registration
-- URL: https://infralicence.in/services/msme-registration
+## Tender Bidding Services
+
+URL: https://infralicence.in/tender-services
+
+Six service offerings:
+1. Tender Information - Access to active government tender notifications and bid opportunities
+2. Tender Bidding Solution - End-to-end bid preparation, documentation, and submission support
+3. GeM Complete Registration - Full assistance for Government e-Marketplace seller registration
+4. Online Vendor Registration - Vendor registration on government procurement portals
+5. Tender Awarded Results - Tracking and updates on awarded tenders and contract outcomes
+6. Pre / Post-Bid Follow-up - Pre-bid query resolution and post-bid follow-up with authorities
+
+## GEM Services
+
+### GeM Registration
+
+URL: https://infralicence.in/services/gem-services
+
+Purpose:
+- Register on Government e-Marketplace portal
+- Sell products/services to government departments, PSUs, and autonomous bodies
+
+Pricing: Starting from ₹3,000
+Timeline: 5-10 working days
+
+## Documentation & Eligibility Support
+
+### MSME Registration (Udyam Registration)
+
+URL: https://infralicence.in/services/msme-registration
+
+Purpose:
+- Register under Ministry of MSME
+- Categories: Micro (up to ₹1 Cr investment), Small (up to ₹10 Cr), Medium (up to ₹50 Cr)
+
+Pricing: Starting from ₹2,000
+Timeline: 2-3 working days
 
 ### GST Registration
-- URL: https://infralicence.in/services/gst-registration
 
-### DSC Services
-- URL: https://infralicence.in/services/dsc-services
+URL: https://infralicence.in/services/gst-registration
 
-### GeM Services
-- URL: https://infralicence.in/services/gem-services
+Purpose:
+- Obtain Goods and Services Tax number
+- Mandatory for turnover exceeding ₹20 Lakhs (₹10 Lakhs for special category states)
 
-## Out Of State Support
+Pricing: Starting from ₹1,500
+Timeline: 7-15 working days
+
+### DSC Services (Digital Signature Certificate)
+
+URL: https://infralicence.in/services/dsc-services
+
+Purpose:
+- Digital signature certificates for online authentication and document signing
+- Classes: Class 1 (basic), Class 2 (e-filing), Class 3 (e-auctions/tenders)
+
+Pricing: Starting from ₹1,000
+Timeline: 2-5 working days
+
+### Turnover Certificate
+
+URL: https://infralicence.in/services/turnover-certificate
+
+Purpose:
+- CA-certified turnover statements for contractor licensing, tender eligibility, and project bids
+
+Pricing: Starting from ₹2,000
+Timeline: 3-7 working days
+
+### Legal Agreement
+
+URL: https://infralicence.in/services/legal-agreement
+
+Purpose:
+- Drafting, reviewing, and finalizing legal agreements for licensing, tender bids, project contracts, and partnerships
+
+Pricing: Starting from ₹1,500
+Timeline: 2-5 working days
 
 ### Out-of-State Contractor Support
 
 URL: https://infralicence.in/services/out-of-state
 
 Purpose:
-- Support for contractors from outside Karnataka who need guidance for working within Karnataka-related licensing and compliance flows
+- Support for contractors from outside Karnataka needing licensing and compliance guidance for working in Karnataka
+
+Pricing: Starting from ₹20,000
+Timeline: 25-40 working days
 
 ## Contact Intent
 
@@ -136,4 +197,4 @@ The site is structured to convert users into enquiries through:
 
 ## Suggested Description For Retrieval
 
-InfraLicence is a Karnataka-focused licensing consultancy website that helps users with KPWD contractor registration, CPWD registration, electrical licensing, MSME registration, GST registration, DSC services, and GeM onboarding. It contains individual service pages, KPWD class detail pages, and contact-driven enquiry flows.
+InfraLicence is a Karnataka-focused licensing consultancy website that helps users with CPWD contractor registration, KPWD contractor registration (Classes 1-4), electrical licensing, tender bidding services, GeM registration, MSME registration, GST registration, DSC services, turnover certificates, and legal agreements. It contains individual service pages, KPWD class detail pages, a dedicated tender services page, and contact-driven enquiry flows.

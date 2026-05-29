@@ -1,20 +1,22 @@
-import React from 'react';
+import React, { createElement } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
-import { ArrowLeft, CheckCircle, Clock, DollarSign, FileText, ChevronRight, Globe } from 'lucide-react';
+import { ArrowLeft, CheckCircle, Clock, DollarSign, FileText, ChevronRight, Globe, Building2, FileCheck, Zap, Briefcase, Receipt, Key, ShoppingCart, FileSignature } from 'lucide-react';
 import { servicesDetail } from '../data/servicesData';
 import './ServiceDetail.css';
 
 const iconMap = {
-  FileCheck: '📋',
-  Building2: '🏢',
-  Zap: '⚡',
-  Briefcase: '💼',
-  Receipt: '🧾',
-  Key: '🔑',
-  ShoppingCart: '🛒',
-  Globe: '🌍'
+  FileCheck,
+  Building2,
+  Zap,
+  Briefcase,
+  Receipt,
+  Key,
+  ShoppingCart,
+  FileText,
+  FileSignature,
+  Globe
 };
 
 const ServiceDetail = () => {
@@ -46,6 +48,36 @@ const ServiceDetail = () => {
         <meta name="twitter:description" content={service.hero.subtitle} />
         <meta name="twitter:image" content="https://infralicence.in/logo512.png" />
         <link rel="canonical" href={`https://infralicence.in/services/${service.id}`} />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": service.title,
+            "description": service.hero.description,
+            "provider": {
+              "@type": "Organization",
+              "name": "InfraLicence",
+              "url": "https://infralicence.in/"
+            },
+            "areaServed": {
+              "@type": "State",
+              "name": "Karnataka",
+              "addressCountry": "IN"
+            },
+            "url": `https://infralicence.in/services/${service.id}`
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://infralicence.in/" },
+              { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://infralicence.in/services" },
+              { "@type": "ListItem", "position": 3, "name": service.title, "item": `https://infralicence.in/services/${service.id}` }
+            ]
+          })}
+        </script>
       </Helmet>
       <section className="service-hero">
         <div className="service-hero-bg"></div>
@@ -59,7 +91,7 @@ const ServiceDetail = () => {
             <Link to="/" className="back-link">
               <ArrowLeft size={18} /> Back to Home
             </Link>
-            <span className="service-icon">{iconMap[service.icon]}</span>
+            <span className="service-icon">{createElement(iconMap[service.icon], { size: 32 })}</span>
             <h1>{service.hero.title}</h1>
             <p className="service-subtitle">{service.hero.subtitle}</p>
             <p className="service-description">{service.hero.description}</p>

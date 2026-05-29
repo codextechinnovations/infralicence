@@ -48,9 +48,13 @@
 }
 
 .service-hero .service-icon {
-  font-size: 3rem;
-  display: block;
   margin-bottom: 16px;
+}
+
+.service-hero .service-icon svg {
+  color: var(--white);
+  height: 48px;
+  width: 48px;
 }
 
 .service-hero h1 {
