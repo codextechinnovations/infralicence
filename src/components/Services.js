@@ -2,13 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import {
-  FileCheck, Building2, Zap, Briefcase, Receipt, Key, ShoppingCart, Globe, ArrowRight, Star, FileText, FileSignature
+  FileCheck, Building2, Zap, Briefcase, Receipt, Key, ShoppingCart, ArrowRight, Star, FileText, FileSignature
 } from 'lucide-react';
 import { content } from '../data/content';
 import './Services.css';
 
 const iconMap = {
-  FileCheck, Building2, Zap, Briefcase, Receipt, Key, ShoppingCart, Globe, FileText, FileSignature
+  FileCheck, Building2, Zap, Briefcase, Receipt, Key, ShoppingCart, FileText, FileSignature
 };
 
 const Services = () => {

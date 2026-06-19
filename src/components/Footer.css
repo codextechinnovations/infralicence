@@ -171,6 +171,14 @@
   margin-bottom: 12px;
 }
 
+.footer-form-group label {
+  display: block;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
 .footer-form-group input,
 .footer-form-group select,
 .footer-form-group textarea {

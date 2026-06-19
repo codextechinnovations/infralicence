@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
@@ -14,12 +14,13 @@ import Process from './components/Process';
 import FAQ from './components/FAQ';
 import CTA from './components/CTA';
 import Footer from './components/Footer';
-import ServiceDetail from './pages/ServiceDetail';
-import TenderServices from './pages/TenderServices';
-import About from './pages/About';
-import Contact from './pages/Contact';
-import TermsAndConditions from './pages/TermsAndConditions';
-import NotFound from './pages/NotFound';
+
+const ServiceDetail = lazy(() => import('./pages/ServiceDetail'));
+const TenderServices = lazy(() => import('./pages/TenderServices'));
+const About = lazy(() => import('./pages/About'));
+const Contact = lazy(() => import('./pages/Contact'));
+const TermsAndConditions = lazy(() => import('./pages/TermsAndConditions'));
+const NotFound = lazy(() => import('./pages/NotFound'));
  
 const Home = () => {
   return (
@@ -126,6 +127,8 @@ function App() {
                 "@id": "https://infralicence.in/#organization",
                 "name": "InfraLicence",
                 "url": "https://infralicence.in/",
+                "logo": "https://infralicence.in/logo512.png",
+                "image": "https://infralicence.in/logo512.png",
                 "description": "Expert PWD licensing, contractor registration, and infrastructure compliance services in Karnataka, India.",
                 "email": "info@infralicence.in",
                 "address": {
@@ -147,6 +150,8 @@ function App() {
                 "@id": "https://infralicence.in/#localbusiness",
                 "name": "InfraLicence Consultants & Solutions",
                 "url": "https://infralicence.in/",
+                "logo": "https://infralicence.in/logo512.png",
+                "image": "https://infralicence.in/logo512.png",
                 "description": "Expert PWD licensing, contractor registration, and infrastructure compliance services in Karnataka, India.",
                 "email": "info@infralicence.in",
                 "areaServed": {
@@ -171,19 +176,24 @@ function App() {
           })}
         </script>
       </Helmet>
+      <a href="#main-content" className="skip-link">Skip to main content</a>
       <ScrollToTop />
       <Navbar />
       <WhatsAppButton />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
-        <Route path="/services" element={<Home />} />
-        <Route path="/services/:id" element={<ServiceDetail />} />
-        <Route path="/tender-services" element={<TenderServices />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
+      <div id="main-content">
+        <Suspense fallback={<div className="page-loader">Loading...</div>}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+            <Route path="/services" element={<Home />} />
+            <Route path="/services/:id" element={<ServiceDetail />} />
+            <Route path="/tender-services" element={<TenderServices />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </Suspense>
+      </div>
       <Footer />
     </Router>
   );

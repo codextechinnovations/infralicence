@@ -5,7 +5,7 @@ import { Helmet } from 'react-helmet-async';
 import { Phone, Mail, MapPin, Clock, Send, MessageSquare, CheckCircle, AlertCircle, Loader2 } from 'lucide-react';
 import { content } from '../data/content';
 import { servicesDetail } from '../data/servicesData';
-import { submitEnquiry } from '../services/api';
+import { submitEnquiry, ConfigurationError } from '../services/api';
 import './Contact.css';
  
 const Contact = () => {
@@ -35,7 +35,8 @@ const Contact = () => {
       setStatus({ type: 'success', message: 'Thank you! We will get back to you within 24 hours.' });
       setFormData({ name: '', email: '', phone: '', service: '', message: '' });
     } catch (err) {
-      setStatus({ type: 'error', message: 'Something went wrong. Please try again or email us directly.' });
+      const configMessage = 'Form submissions are not configured yet. Please email us at info@infralicence.in or try again later.';
+      setStatus({ type: 'error', message: err instanceof ConfigurationError ? configMessage : 'Something went wrong. Please try again or email us directly.' });
     } finally {
       setLoading(false);
     }

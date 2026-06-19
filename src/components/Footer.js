@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Send, CheckCircle, AlertCircle, Loader2 } from 'lucide-react';
 import { content } from '../data/content';
-import { submitEnquiry } from '../services/api';
+import { submitEnquiry, ConfigurationError } from '../services/api';
 import './Footer.css';
 
 const socialIcons = {
@@ -53,7 +53,8 @@ const Footer = () => {
       setStatus({ type: 'success', message: 'Thank you! We will get back to you shortly.' });
       setFormData({ name: '', email: '', phone: '', message: '' });
     } catch (err) {
-      setStatus({ type: 'error', message: 'Something went wrong. Please try again or email us directly.' });
+      const configMessage = 'Form submissions are not configured yet. Please email us at info@infralicence.in or try again later.';
+      setStatus({ type: 'error', message: err instanceof ConfigurationError ? configMessage : 'Something went wrong. Please try again or email us directly.' });
     } finally {
       setLoading(false);
     }
@@ -136,8 +137,10 @@ const Footer = () => {
               <h4>Quick Enquiry</h4>
               <form onSubmit={handleSubmit}>
                 <div className="footer-form-group">
+                  <label htmlFor="footer-name">Your Name *</label>
                   <input
                     type="text"
+                    id="footer-name"
                     name="name"
                     placeholder="Your Name *"
                     value={formData.name}
@@ -146,8 +149,10 @@ const Footer = () => {
                   />
                 </div>
                 <div className="footer-form-group">
+                  <label htmlFor="footer-email">Your Email *</label>
                   <input
                     type="email"
+                    id="footer-email"
                     name="email"
                     placeholder="Your Email *"
                     value={formData.email}
@@ -156,8 +161,10 @@ const Footer = () => {
                   />
                 </div>
                 <div className="footer-form-group">
+                  <label htmlFor="footer-phone">Your Phone *</label>
                   <input
                     type="tel"
+                    id="footer-phone"
                     name="phone"
                     placeholder="Your Phone *"
                     value={formData.phone}
@@ -166,7 +173,9 @@ const Footer = () => {
                   />
                 </div>
                 <div className="footer-form-group">
+                  <label htmlFor="footer-message">Your Message *</label>
                   <textarea
+                    id="footer-message"
                     name="message"
                     placeholder="Your Message *"
                     value={formData.message}
@@ -194,7 +203,7 @@ const Footer = () => {
       <div className="footer-bottom">
         <div className="container">
           <div className="footer-bottom-content">
-            <p>&copy; 2025 InfraLicence Consultants & Solutions. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} InfraLicence Consultants & Solutions. All rights reserved.</p>
             <p>Powered by CodeX Tech Innovations & Consultants LLP</p>
           </div>
         </div>

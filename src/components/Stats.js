@@ -1,34 +1,56 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { content } from '../data/content';
 import './Stats.css';
 
 const Stats = () => {
   const [counters, setCounters] = useState(content.stats.map(() => 0));
+  const rafIdRef = useRef(null);
+  const countersRef = useRef(counters);
 
   useEffect(() => {
-    const timers = content.stats.map((stat, index) => {
-      const target = parseInt(stat.value.replace(/[^0-9]/g, '')) || 0;
-      const duration = 2000;
-      const steps = 60;
-      const increment = target / steps;
-      let current = 0;
+    countersRef.current = counters;
+  }, [counters]);
 
-      return setInterval(() => {
-        current += increment;
-        if (current >= target) {
-          current = target;
-          clearInterval(timers[index]);
+  useEffect(() => {
+    const targets = content.stats.map((stat) =>
+      parseInt(stat.value.replace(/[^0-9]/g, '')) || 0
+    );
+    const duration = 2000;
+    const startTimeRef = { current: null };
+
+    const animate = (timestamp) => {
+      if (startTimeRef.current === null) {
+        startTimeRef.current = timestamp;
+      }
+
+      const elapsed = timestamp - startTimeRef.current;
+      const progress = Math.min(elapsed / duration, 1);
+      let changed = false;
+
+      const nextCounters = targets.map((target, index) => {
+        const nextValue = Math.round(target * progress);
+        if (nextValue !== countersRef.current[index]) {
+          changed = true;
         }
-        setCounters(prev => {
-          const newCounters = [...prev];
-          newCounters[index] = current;
-          return newCounters;
-        });
-      }, duration / steps);
-    });
+        return nextValue;
+      });
 
-    return () => timers.forEach(timer => clearInterval(timer));
+      if (changed) {
+        setCounters(nextCounters);
+      }
+
+      if (progress < 1) {
+        rafIdRef.current = requestAnimationFrame(animate);
+      }
+    };
+
+    rafIdRef.current = requestAnimationFrame(animate);
+
+    const cleanupId = rafIdRef.current;
+    return () => {
+      if (cleanupId) cancelAnimationFrame(cleanupId);
+    };
   }, []);
 
   return (
@@ -45,7 +67,7 @@ const Stats = () => {
           >
             <div className="stat-value">
               {stat.value.includes('₹') ? '₹' : ''}
-              {Math.round(counters[index])}
+              {counters[index]}
               {stat.suffix}
               {stat.value.includes('Cr') ? ' Cr' : ''}
             </div>

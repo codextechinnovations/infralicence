@@ -36,16 +36,16 @@ const ServiceDetail = () => {
     <main className="service-detail-page">
       <Helmet>
         <title>{service.title} | InfraLicence</title>
-        <meta name="description" content={service.hero.subtitle} />
+        <meta name="description" content={service.hero.description} />
         <meta property="og:title" content={`${service.title} | InfraLicence`} />
-        <meta property="og:description" content={service.hero.subtitle} />
+        <meta property="og:description" content={service.hero.description} />
         <meta property="og:url" content={`https://infralicence.in/services/${service.id}`} />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://infralicence.in/logo512.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:url" content={`https://infralicence.in/services/${service.id}`} />
         <meta name="twitter:title" content={`${service.title} | InfraLicence`} />
-        <meta name="twitter:description" content={service.hero.subtitle} />
+        <meta name="twitter:description" content={service.hero.description} />
         <meta name="twitter:image" content="https://infralicence.in/logo512.png" />
         <link rel="canonical" href={`https://infralicence.in/services/${service.id}`} />
         <script type="application/ld+json">

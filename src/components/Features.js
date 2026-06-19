@@ -56,6 +56,13 @@ const Features = () => {
           >
             <div className="features-image-wrapper">
               <div className="features-image">
+                <img
+                  src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&h=450&fit=crop"
+                  alt="Professional consultants reviewing infrastructure project documents"
+                  loading="lazy"
+                  width="600"
+                  height="450"
+                />
               </div>
               <div className="experience-badge">
                 <span className="exp-years">10+</span>

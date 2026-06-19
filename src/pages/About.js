@@ -8,7 +8,7 @@ const About = () => {
   const stats = [
     { value: '10+', label: 'Years Experience', icon: Clock },
     { value: '100+', label: 'Clients Served', icon: Users },
-    { value: 'Query Resolution', label: 'Processed Value', icon: TrendingUp },
+    { value: '₹100Cr+', label: 'Processed Value', icon: TrendingUp },
     { value: '98%', label: 'Success Rate', icon: Award }
   ];
 

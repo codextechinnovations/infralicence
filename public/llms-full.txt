@@ -14,6 +14,40 @@ Working Hours: 08.00 - 17.00
 
 InfraLicence helps contractors and businesses complete licensing, registration, and compliance tasks related to public works and associated business documentation. The site covers CPWD contractor registration, KPWD contractor licensing (Classes 1-4), electrical contractor licensing, tender bidding services, GeM registration, MSME registration, GST registration, DSC services, turnover certificates, legal agreements, and out-of-state contractor support.
 
+## Main Pages
+
+- Home: https://infralicence.in/
+- About: https://infralicence.in/about
+- Contact: https://infralicence.in/contact
+- Services: https://infralicence.in/services
+- Tender Services: https://infralicence.in/tender-services
+- Terms & Conditions: https://infralicence.in/terms-and-conditions
+
+## Home Page Sections
+
+1. Hero — headline, subtitle, primary CTA to contact/services
+2. Stats — 10+ years experience, 20K projects, 100+ happy clients
+3. Core Services — CPWD, KPWD, Electrical Licence
+4. Why Choose Us — end-to-end support, transparent fees, expert guidance, all-in-one solution, trusted by clients
+5. Testimonials — client feedback carousel
+6. Process — Documentation & Assessment, Submission & Liaison, Inspection & Verification, Approval & Support
+8. FAQ — accordion with common PWD licensing questions
+9. CTA — contact prompt with email/phone links
+
+## SEO & Structured Data
+
+- JSON-LD Organization, WebSite, LocalBusiness, Service, BreadcrumbList, and FAQPage schemas
+- Open Graph and Twitter Card meta tags on all pages
+- Canonical URLs on all pages
+- Sitemap at /sitemap.xml
+- robots.txt with sitemap reference
+- Favicon: SVG + ICO + PNG variants
+
+## Forms
+
+- Contact page form and footer Quick Enquiry form both POST to REACT_APP_FORM_ENDPOINT (configure in .env, e.g. Formspree)
+- WhatsApp floating button links to https://wa.me/919741821179
+
 ## Core Services
 
 ### CPWD Contractor Registration

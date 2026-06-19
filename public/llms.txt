@@ -18,6 +18,18 @@ Canonical: https://infralicence.in/
 - Contact: https://infralicence.in/contact
 - Services: https://infralicence.in/services
 - Tender Services: https://infralicence.in/tender-services
+- Terms & Conditions: https://infralicence.in/terms-and-conditions
+
+## Home Page Sections
+
+- Hero with CTA
+- Stats counter
+- Core Services
+- Why Choose Us / Features
+- Testimonials
+- Step-by-Step Process
+- FAQ accordion
+- Final CTA
 
 ## Core Services
 
